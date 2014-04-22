@@ -68,6 +68,7 @@
     <module>elb</module>
     <module>iam</module>
     <module>rds</module>
+    <module>glacier</module>
     <module>aws-elb</module>
     <module>aws-iam</module>
     <module>aws-rds</module>
