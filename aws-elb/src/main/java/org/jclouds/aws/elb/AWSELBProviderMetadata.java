@@ -91,7 +91,7 @@ public class AWSELBProviderMetadata extends BaseProviderMetadata {
          .endpoint("https://elasticloadbalancing.us-east-1.amazonaws.com")
          .homepage(URI.create("http://aws.amazon.com/elasticloadbalancing"))
          .console(URI.create("https://console.aws.amazon.com/ec2/home"))
-         .linkedServices("aws-ec2","aws-elb", "aws-cloudwatch", "aws-s3", "aws-simpledb")
+         .linkedServices("aws-ec2", "aws-elb", "aws-cloudwatch", "aws-s3", "aws-simpledb")
          .iso3166Codes("US-VA", "US-CA", "BR-SP", "US-OR", "IE", "SG", "AU-NSW", "JP-13")
          .apiMetadata(new ELBApiMetadata())
          .defaultProperties(AWSELBProviderMetadata.defaultProperties());

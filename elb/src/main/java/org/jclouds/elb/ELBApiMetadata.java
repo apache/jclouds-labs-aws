@@ -22,7 +22,6 @@ import static org.jclouds.aws.reference.AWSConstants.PROPERTY_HEADER_TAG;
 import java.net.URI;
 import java.util.Properties;
 
-import org.jclouds.apis.ApiMetadata;
 import org.jclouds.elb.config.ELBHttpApiModule;
 import org.jclouds.elb.loadbalancer.config.ELBLoadBalancerContextModule;
 import org.jclouds.loadbalancer.LoadBalancerServiceContext;

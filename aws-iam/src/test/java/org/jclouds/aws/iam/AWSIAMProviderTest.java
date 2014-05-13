@@ -16,7 +16,6 @@
  */
 package org.jclouds.aws.iam;
 
-import org.jclouds.aws.iam.AWSIAMProviderMetadata;
 import org.jclouds.iam.IAMApiMetadata;
 import org.jclouds.providers.internal.BaseProviderMetadataTest;
 import org.testng.annotations.Test;
