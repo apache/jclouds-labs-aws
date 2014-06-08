@@ -29,8 +29,6 @@ import com.google.common.collect.ImmutableList.Builder;
 
 /**
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListGroupPolicies.html" />
- * 
- * @author Adrian Cole
  */
 public class ListPoliciesResultHandler extends
       ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<String>> {

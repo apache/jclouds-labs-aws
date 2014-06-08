@@ -21,10 +21,6 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import com.google.common.base.CaseFormat;
 import com.google.common.base.Objects;
 
-/**
- * 
- * @author Adrian Cole
- */
 public class Authorization {
    /**
     * Status of a source of traffic to the security group

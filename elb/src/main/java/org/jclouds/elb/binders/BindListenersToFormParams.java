@@ -30,8 +30,6 @@ import com.google.common.collect.ImmutableSet;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_CreateLoadBalancer.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class BindListenersToFormParams implements org.jclouds.rest.Binder {
 

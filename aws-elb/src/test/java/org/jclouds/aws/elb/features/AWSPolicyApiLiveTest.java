@@ -19,10 +19,6 @@ package org.jclouds.aws.elb.features;
 import org.jclouds.elb.features.PolicyApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSPolicyApiLiveTest")
 public class AWSPolicyApiLiveTest extends PolicyApiLiveTest {
 

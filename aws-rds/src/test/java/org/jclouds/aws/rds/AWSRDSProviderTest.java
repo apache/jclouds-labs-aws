@@ -22,8 +22,6 @@ import org.testng.annotations.Test;
 
 /**
  * The AWSRDSProviderTest tests the org.jclouds.providers.AWSRDSProvider class.
- * 
- * @author Adrian Cole
  */
 @Test(groups = "unit", testName = "AWSRDSProviderTest")
 public class AWSRDSProviderTest extends BaseProviderMetadataTest {

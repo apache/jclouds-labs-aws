@@ -19,10 +19,6 @@ package org.jclouds.rds.internal;
 import org.jclouds.rds.RDSApi;
 
 
-/**
- * 
- * @author Adrian Cole
- */
 public class BaseRDSApiExpectTest extends BaseRDSExpectTest<RDSApi> {
 
 }

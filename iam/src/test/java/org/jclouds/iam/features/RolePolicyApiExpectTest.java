@@ -31,9 +31,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "unit", testName = "RolePolicyApiExpectTest")
 public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
    String policy = "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"s3:*\"],\"Resource\":[\"*\"]}]}";

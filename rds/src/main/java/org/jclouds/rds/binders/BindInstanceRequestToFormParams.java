@@ -28,8 +28,6 @@ import com.google.common.collect.ImmutableMultimap;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class BindInstanceRequestToFormParams implements org.jclouds.rest.Binder {
 

@@ -31,8 +31,6 @@ import com.google.inject.Inject;
 
 /**
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRoles.html" />
- *
- * @author Adrian Cole
  */
 public class ListRolesResultHandler extends ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<Role>> {
 

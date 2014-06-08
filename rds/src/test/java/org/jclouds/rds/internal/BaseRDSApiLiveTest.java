@@ -20,10 +20,6 @@ import org.jclouds.apis.BaseApiLiveTest;
 import org.jclouds.rds.RDSApi;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live")
 public class BaseRDSApiLiveTest extends BaseApiLiveTest<RDSApi> {
    public BaseRDSApiLiveTest() {

@@ -20,10 +20,6 @@ import org.jclouds.apis.BaseApiLiveTest;
 import org.jclouds.iam.IAMApi;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live")
 public class BaseIAMApiLiveTest extends BaseApiLiveTest<IAMApi> {
    public BaseIAMApiLiveTest() {

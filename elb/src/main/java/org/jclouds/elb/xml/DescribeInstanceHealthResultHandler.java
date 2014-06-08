@@ -33,8 +33,6 @@ import com.google.inject.Inject;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_DescribeInstanceHealth.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class DescribeInstanceHealthResultHandler extends
          ParseSax.HandlerForGeneratedRequestWithResult<Set<InstanceHealth>> {

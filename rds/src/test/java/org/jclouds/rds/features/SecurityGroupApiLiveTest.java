@@ -39,9 +39,6 @@ import org.testng.annotations.Test;
 import com.google.common.base.Predicate;
 import com.google.common.collect.Iterables;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "SecurityGroupApiLiveTest")
 public class SecurityGroupApiLiveTest extends BaseRDSApiLiveTest {
    public static final String SECURITYGROUP = (System.getProperty("user.name") + "-jclouds-securityGroup")

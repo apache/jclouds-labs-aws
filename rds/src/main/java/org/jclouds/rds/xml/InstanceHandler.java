@@ -34,8 +34,6 @@ import com.google.common.net.HostAndPort;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_GetInstance.html"
  *      />
- * 
- * @author Adrian Cole
  */
 public class InstanceHandler extends ParseSax.HandlerForGeneratedRequestWithResult<Instance> {
 

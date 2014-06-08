@@ -29,8 +29,6 @@ import org.xml.sax.SAXException;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_ListenerDescription.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class ListenerWithPoliciesHandler extends ParseSax.HandlerForGeneratedRequestWithResult<ListenerWithPolicies> {
 

@@ -29,8 +29,6 @@ import com.google.common.base.Objects;
  * @see <a
  *     href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_LoadBalancerDescription.html"
  *     >doc</a>
- * 
- * @author Adrian Cole
  */
 public class SecurityGroupAndOwner {
 

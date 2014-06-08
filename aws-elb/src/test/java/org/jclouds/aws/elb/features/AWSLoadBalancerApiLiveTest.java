@@ -19,10 +19,6 @@ package org.jclouds.aws.elb.features;
 import org.jclouds.elb.features.LoadBalancerApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSLoadBalancerApiLiveTest")
 public class AWSLoadBalancerApiLiveTest extends LoadBalancerApiLiveTest {
 

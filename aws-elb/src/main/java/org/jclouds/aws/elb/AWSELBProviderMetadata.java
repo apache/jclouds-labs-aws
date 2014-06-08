@@ -38,8 +38,6 @@ import org.jclouds.providers.internal.BaseProviderMetadata;
 /**
  * Implementation of @ link org.jclouds.types.ProviderMetadata} for Amazon's Elastic Load Balancing
  * provider.
- * 
- * @author Adrian Cole
  */
 public class AWSELBProviderMetadata extends BaseProviderMetadata {
 

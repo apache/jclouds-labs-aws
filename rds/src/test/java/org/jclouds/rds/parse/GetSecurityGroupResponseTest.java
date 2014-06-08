@@ -28,9 +28,6 @@ import org.jclouds.rds.domain.SecurityGroup;
 import org.jclouds.rds.xml.SecurityGroupHandler;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "GetSecurityGroupResponseTest")
 public class GetSecurityGroupResponseTest extends BaseHandlerTest {

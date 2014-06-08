@@ -41,10 +41,6 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.TypeLiteral;
 
-/**
- * 
- * @author Lili Nadar
- */
 @Test(groups = "live", singleThreaded = true, testName = "ELBLoadBalancerServiceLiveTest")
 public class ELBLoadBalancerServiceLiveTest extends BaseLoadBalancerServiceLiveTest {
    public ELBLoadBalancerServiceLiveTest() {

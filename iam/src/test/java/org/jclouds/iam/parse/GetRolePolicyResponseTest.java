@@ -25,9 +25,6 @@ import org.jclouds.iam.domain.Policy;
 import org.jclouds.iam.xml.PolicyHandler;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "GetRolePolicyResponseTest")
 public class GetRolePolicyResponseTest extends BaseHandlerTest {

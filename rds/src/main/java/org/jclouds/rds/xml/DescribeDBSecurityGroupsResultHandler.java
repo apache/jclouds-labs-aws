@@ -34,8 +34,6 @@ import com.google.inject.Inject;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_DescribeDBSecurityGroups.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class DescribeDBSecurityGroupsResultHandler extends
          ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<SecurityGroup>> {

@@ -22,8 +22,6 @@ import org.jclouds.rest.ConfiguresHttpApi;
 
 /**
  * Configures the IAM connection.
- * 
- * @author Adrian Cole
  */
 @ConfiguresHttpApi
 public class IAMHttpApiModule extends FormSigningHttpApiModule<IAMApi> {

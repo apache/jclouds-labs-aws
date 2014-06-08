@@ -55,8 +55,6 @@ import com.google.common.net.HostAndPort;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/UserGuide/Concepts.DBInstance.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class Instance extends BaseInstance {
    public static enum Status {

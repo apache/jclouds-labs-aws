@@ -35,7 +35,6 @@ import org.jclouds.rest.annotations.VirtualHost;
  * <p/>
  * 
  * @see <a href="http://docs.amazonwebservices.com/IAM/latest/APIReference" />
- * @author Adrian Cole
  */
 @RequestFilters(FormSigner.class)
 @VirtualHost

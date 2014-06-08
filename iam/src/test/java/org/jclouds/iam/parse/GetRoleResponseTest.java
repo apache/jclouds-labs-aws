@@ -26,9 +26,6 @@ import org.jclouds.iam.domain.Role;
 import org.jclouds.iam.xml.RoleHandler;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "GetRoleResponseTest")
 public class GetRoleResponseTest extends BaseHandlerTest {

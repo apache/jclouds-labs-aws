@@ -26,10 +26,6 @@ import com.google.common.base.Optional;
 import com.google.common.base.Objects.ToStringHelper;
 import com.google.common.collect.ImmutableSet;
 
-/**
- * 
- * @author Adrian Cole
- */
 public class ListenerWithPolicies extends Listener {
 
    public static Builder<?> builder() {

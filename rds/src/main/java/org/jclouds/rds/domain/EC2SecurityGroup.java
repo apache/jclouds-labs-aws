@@ -26,8 +26,6 @@ import com.google.common.base.Optional;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_EC2SecurityGroup.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class EC2SecurityGroup extends Authorization {
 

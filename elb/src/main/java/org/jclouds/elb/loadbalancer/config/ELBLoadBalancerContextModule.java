@@ -20,8 +20,6 @@ import org.jclouds.loadbalancer.config.BaseLoadBalancerServiceContextModule;
 
 /**
  * Configures the ELB connection.
- * 
- * @author Adrian Cole
  */
 
 public class ELBLoadBalancerContextModule extends BaseLoadBalancerServiceContextModule {

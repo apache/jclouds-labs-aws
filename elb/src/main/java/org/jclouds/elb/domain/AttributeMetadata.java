@@ -28,8 +28,6 @@ import com.google.common.base.Optional;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_PolicyAttributeTypeDescription.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class AttributeMetadata<V> {
    /**

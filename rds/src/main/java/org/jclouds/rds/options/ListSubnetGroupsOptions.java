@@ -27,8 +27,6 @@ import com.google.common.collect.Multimap;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_DescribeSubnetGroups.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class ListSubnetGroupsOptions extends BaseHttpRequestOptions implements Cloneable {
 

@@ -26,9 +26,6 @@ import org.jclouds.loadbalancer.strategy.GetLoadBalancerMetadataStrategy;
 import org.jclouds.loadbalancer.strategy.ListLoadBalancersStrategy;
 import org.jclouds.loadbalancer.strategy.LoadBalanceNodesStrategy;
 
-/**
- * @author Adrian Cole
- */
 public class ELBBindLoadBalancerStrategiesByClass extends BindLoadBalancerStrategiesByClass {
 
    @Override

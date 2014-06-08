@@ -19,9 +19,6 @@ package org.jclouds.aws.iam.features;
 import org.jclouds.iam.features.UserApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSUserApiLiveTest")
 public class AWSUserApiLiveTest extends UserApiLiveTest {
    public AWSUserApiLiveTest() {

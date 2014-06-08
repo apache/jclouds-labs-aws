@@ -32,9 +32,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "unit", testName = "RoleApiExpectTest")
 public class RoleApiExpectTest extends BaseIAMApiExpectTest {
    String policy = "{\"Version\":\"2008-10-17\",\"Statement\":[{\"Sid\":\"\",\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"ec2.amazonaws.com\"},\"Action\":\"sts:AssumeRole\"}]}";

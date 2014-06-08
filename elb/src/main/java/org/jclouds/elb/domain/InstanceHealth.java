@@ -27,8 +27,6 @@ import com.google.common.base.Optional;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_InstanceState.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class InstanceHealth {
 

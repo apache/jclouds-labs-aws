@@ -25,8 +25,6 @@ import org.jclouds.rest.Binder;
 
 /**
  * Binds the Iterable<String> to form parameters named with AvailabilityZones.member.N
- * 
- * @author Adrian Cole
  */
 @Singleton
 public class BindAvailabilityZonesToIndexedFormParams implements Binder {

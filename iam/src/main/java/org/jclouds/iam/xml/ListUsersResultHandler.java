@@ -31,8 +31,6 @@ import com.google.inject.Inject;
 
 /**
  * @see <a href="http://docs.amazonwebservices.com/IAM/latest/APIReference/API_ListUsers.html" />
- *
- * @author Adrian Cole
  */
 public class ListUsersResultHandler extends ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<User>> {
 

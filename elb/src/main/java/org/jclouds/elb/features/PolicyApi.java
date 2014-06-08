@@ -47,7 +47,6 @@ import org.jclouds.rest.annotations.XMLResponseParser;
  * <p/>
  * 
  * @see <a href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference" >doc</a>
- * @author Adrian Cole
  */
 @RequestFilters(FormSigner.class)
 @VirtualHost

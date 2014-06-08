@@ -19,9 +19,6 @@ package org.jclouds.aws.iam.features;
 import org.jclouds.iam.features.RolePolicyApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSRolePolicyApiLiveTest")
 public class AWSRolePolicyApiLiveTest extends RolePolicyApiLiveTest {
    public AWSRolePolicyApiLiveTest() {

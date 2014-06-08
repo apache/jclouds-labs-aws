@@ -29,8 +29,6 @@ import com.google.common.primitives.Ints;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_PolicyDescription.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class PolicyHandler extends ParseSax.HandlerForGeneratedRequestWithResult<Policy> {
 

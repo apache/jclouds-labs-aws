@@ -27,8 +27,6 @@ import org.xml.sax.SAXException;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_HealthCheck.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class HealthCheckHandler extends ParseSax.HandlerForGeneratedRequestWithResult<HealthCheck> {
 

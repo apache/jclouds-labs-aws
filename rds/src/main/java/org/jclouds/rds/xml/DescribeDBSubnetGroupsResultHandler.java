@@ -34,8 +34,6 @@ import com.google.inject.Inject;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_DescribeDBSubnetGroups.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class DescribeDBSubnetGroupsResultHandler extends
          ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<SubnetGroup>> {

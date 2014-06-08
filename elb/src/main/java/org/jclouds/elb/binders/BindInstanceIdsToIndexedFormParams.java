@@ -28,8 +28,6 @@ import com.google.common.collect.ImmutableMultimap.Builder;
 
 /**
  * Binds the Iterable<String> to form parameters named with Instances.member.index.InstanceId
- * 
- * @author Adrian Cole
  */
 @Singleton
 public class BindInstanceIdsToIndexedFormParams implements Binder {

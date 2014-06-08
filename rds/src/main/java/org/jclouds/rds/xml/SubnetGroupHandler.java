@@ -30,8 +30,6 @@ import org.xml.sax.SAXException;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_DBSubnetGroup.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class SubnetGroupHandler extends ParseSax.HandlerForGeneratedRequestWithResult<SubnetGroup> {
    protected final SubnetHandler subnetHandler;

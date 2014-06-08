@@ -29,7 +29,6 @@ package org.jclouds.elb.domain;
  * If there is another listener with the same InstancePort whose InstanceProtocol is HTTP or TCP,
  * the listener's InstanceProtocol must be either HTTP or TCP.
  * 
- * @author Adrian Cole
  * @see <a href =
  *      "http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_Listener.html">
  *      docs</a>

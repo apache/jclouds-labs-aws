@@ -19,10 +19,6 @@ package org.jclouds.aws.elb.loadbalancer;
 import org.jclouds.elb.loadbalancer.ELBLoadBalancerServiceLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live", singleThreaded = true, testName = "AWSELBLoadBalancerServiceLiveTest")
 public class AWSELBLoadBalancerServiceLiveTest extends ELBLoadBalancerServiceLiveTest {
 

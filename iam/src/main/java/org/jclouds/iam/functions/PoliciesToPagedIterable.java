@@ -29,9 +29,6 @@ import com.google.common.annotations.Beta;
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
 
-/**
- * @author Adrian Cole
- */
 @Beta
 public class PoliciesToPagedIterable {
    public static class RolePoliciesToPagedIterable extends Arg0ToPagedIterable.FromCaller<String, RolePoliciesToPagedIterable> {

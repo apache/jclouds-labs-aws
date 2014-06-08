@@ -51,9 +51,6 @@ import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.TypeLiteral;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "InstanceApiLiveTest")
 public class InstanceApiLiveTest extends BaseRDSApiLiveTest {
    public static final String INSTANCE = (System.getProperty("user.name") + "-jclouds-instance").toLowerCase();

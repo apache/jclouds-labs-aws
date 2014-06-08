@@ -22,8 +22,6 @@ import org.testng.annotations.Test;
 
 /**
  * The AWSELBProviderTest tests the org.jclouds.providers.AWSELBProvider class.
- * 
- * @author Adrian Cole
  */
 @Test(groups = "unit", testName = "AWSELBProviderTest")
 public class AWSELBProviderTest extends BaseProviderMetadataTest {

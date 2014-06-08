@@ -28,9 +28,6 @@ import org.jclouds.iam.domain.Role;
 import org.jclouds.iam.xml.InstanceProfileHandler;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "GetInstanceProfileResponseTest")
 public class GetInstanceProfileResponseTest extends BaseHandlerTest {

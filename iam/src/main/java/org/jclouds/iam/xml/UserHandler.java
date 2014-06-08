@@ -27,8 +27,6 @@ import org.xml.sax.Attributes;
 
 /**
  * @see <a href="http://docs.amazonwebservices.com/IAM/latest/APIReference/API_GetUser.html" />
- * 
- * @author Adrian Cole
  */
 public class UserHandler extends ParseSax.HandlerForGeneratedRequestWithResult<User> {
    private final DateService dateService;

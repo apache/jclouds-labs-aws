@@ -27,8 +27,6 @@ import com.google.common.collect.ImmutableList;
 
 /**
  * @see <a href="http://docs.amazonwebservices.com/IAM/latest/APIReference/API_GetInstanceProfile.html" />
- * 
- * @author Adrian Cole
  */
 public final class InstanceProfile {
 

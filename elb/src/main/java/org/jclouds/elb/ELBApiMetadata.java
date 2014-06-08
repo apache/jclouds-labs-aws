@@ -32,8 +32,6 @@ import com.google.inject.Module;
 
 /**
  * Implementation of {@link ApiMetadata} for Amazon's Elastic Load Balancing api.
- * 
- * @author Adrian Cole
  */
 public class ELBApiMetadata extends BaseHttpApiMetadata<ELBApi> {
 

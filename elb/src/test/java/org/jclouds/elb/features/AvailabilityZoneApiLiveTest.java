@@ -19,9 +19,6 @@ package org.jclouds.elb.features;
 import org.jclouds.elb.internal.BaseELBApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AvailabilityZoneApiLiveTest")
 public class AvailabilityZoneApiLiveTest extends BaseELBApiLiveTest {
 

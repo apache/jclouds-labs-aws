@@ -27,8 +27,6 @@ import com.google.common.collect.Multimap;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_DescribeLoadBalancerPolicies.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class Policy {
 

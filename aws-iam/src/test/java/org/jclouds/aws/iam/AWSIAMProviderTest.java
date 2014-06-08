@@ -22,8 +22,6 @@ import org.testng.annotations.Test;
 
 /**
  * The AWSIAMProviderTest tests the org.jclouds.providers.AWSIAMProvider class.
- * 
- * @author Adrian Cole
  */
 @Test(groups = "unit", testName = "AWSIAMProviderTest")
 public class AWSIAMProviderTest extends BaseProviderMetadataTest {

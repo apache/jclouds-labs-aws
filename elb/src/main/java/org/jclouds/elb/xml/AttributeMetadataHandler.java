@@ -28,8 +28,6 @@ import org.xml.sax.SAXException;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_PolicyAttributeTypeDescription.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class AttributeMetadataHandler extends ParseSax.HandlerForGeneratedRequestWithResult<AttributeMetadata<?>> {
 

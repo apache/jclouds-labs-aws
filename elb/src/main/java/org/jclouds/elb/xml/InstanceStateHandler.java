@@ -27,8 +27,6 @@ import org.xml.sax.SAXException;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_InstanceState.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class InstanceStateHandler extends ParseSax.HandlerForGeneratedRequestWithResult<InstanceHealth> {
 

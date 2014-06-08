@@ -43,7 +43,6 @@ import org.jclouds.rest.annotations.XMLResponseParser;
  * <p/>
  * 
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_ListRolePolicies.html" />
- * @author Adrian Cole
  */
 @RequestFilters(FormSigner.class)
 @VirtualHost

@@ -26,9 +26,6 @@ import org.jclouds.iam.domain.User;
 import org.jclouds.iam.xml.UserHandler;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "GetUserResponseTest")
 public class GetUserResponseTest extends BaseHandlerTest {

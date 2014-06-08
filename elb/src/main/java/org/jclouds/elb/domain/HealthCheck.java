@@ -31,8 +31,6 @@ import com.google.common.base.Objects.ToStringHelper;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/ConfigureHealthCheck.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class HealthCheck {
 

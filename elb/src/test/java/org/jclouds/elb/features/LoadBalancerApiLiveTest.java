@@ -32,9 +32,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterables;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "LoadBalancerApiLiveTest")
 public class LoadBalancerApiLiveTest extends BaseELBApiLiveTest {
 

@@ -21,9 +21,6 @@ import org.jclouds.collect.PagedIterable;
 import org.jclouds.iam.domain.Policy;
 import org.jclouds.javax.annotation.Nullable;
 
-/**
- * @author Adrian Cole
- */
 public interface PolicyApi {
 
    /**

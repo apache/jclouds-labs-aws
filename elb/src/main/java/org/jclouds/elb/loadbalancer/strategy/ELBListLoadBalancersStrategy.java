@@ -34,10 +34,6 @@ import com.google.common.base.Function;
 import com.google.common.base.Supplier;
 import com.google.common.collect.FluentIterable;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Singleton
 public class ELBListLoadBalancersStrategy implements ListLoadBalancersStrategy {
 

@@ -18,10 +18,6 @@ package org.jclouds.iam.internal;
 
 import org.jclouds.iam.IAMApi;
 
-/**
- * 
- * @author Adrian Cole
- */
 public class BaseIAMApiExpectTest extends BaseIAMExpectTest<IAMApi> {
 
 }

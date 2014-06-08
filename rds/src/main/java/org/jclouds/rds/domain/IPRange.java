@@ -24,8 +24,6 @@ import com.google.common.base.Objects;
  * 
  * @see <a href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_IPRange.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class IPRange extends Authorization {
 

@@ -38,8 +38,6 @@ import com.google.inject.Provides;
 /**
  * Provides access to EC2 Elastic Load Balancer via their REST API.
  * <p/>
- * 
- * @author Adrian Cole
  */
 @Beta
 @RequestFilters(FormSigner.class)

@@ -33,8 +33,6 @@ import com.google.inject.Inject;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_DescribeLoadBalancerPolicyTypeTypes.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class DescribeLoadBalancerPolicyTypesResultHandler extends
          ParseSax.HandlerForGeneratedRequestWithResult<Set<PolicyType>> {

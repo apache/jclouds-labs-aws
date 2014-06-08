@@ -32,8 +32,6 @@ import com.google.common.collect.ImmutableSet;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class InstanceRequest extends BaseInstance {
    public static Builder<?> builder() {

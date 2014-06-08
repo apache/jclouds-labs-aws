@@ -36,8 +36,6 @@ import com.google.common.base.Objects.ToStringHelper;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/elb-listener-config.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class Listener {
 

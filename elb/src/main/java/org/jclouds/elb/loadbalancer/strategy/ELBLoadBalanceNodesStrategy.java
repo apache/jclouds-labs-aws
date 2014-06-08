@@ -45,10 +45,6 @@ import com.google.common.base.Function;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Singleton
 public class ELBLoadBalanceNodesStrategy implements LoadBalanceNodesStrategy {
    @Resource

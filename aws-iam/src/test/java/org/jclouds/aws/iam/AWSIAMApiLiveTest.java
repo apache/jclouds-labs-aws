@@ -21,8 +21,6 @@ import org.testng.annotations.Test;
 
 /**
  * Tests behavior of {@code IAMApi}
- * 
- * @author Adrian Cole
  */
 @Test(groups = "live", singleThreaded = true, testName = "AWSIAMApiLiveTest")
 public class AWSIAMApiLiveTest extends IAMApiLiveTest {

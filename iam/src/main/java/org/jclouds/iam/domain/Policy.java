@@ -24,8 +24,6 @@ import com.google.common.base.Objects;
 
 /**
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetUserPolicy.html" />
- * 
- * @author Adrian Cole
  */
 public final class Policy {
 

@@ -28,8 +28,6 @@ import org.xml.sax.Attributes;
 
 /**
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetRole.html" />
- * 
- * @author Adrian Cole
  */
 public class RoleHandler extends ParseSax.HandlerForGeneratedRequestWithResult<Role> {
    private final DateService dateService;

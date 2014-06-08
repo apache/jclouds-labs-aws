@@ -26,8 +26,6 @@ import com.google.common.collect.ImmutableSet;
 
 /**
  * Tests behavior of {@code ListLoadBalancersOptions}
- * 
- * @author Adrian Cole
  */
 @Test(groups = "unit", testName = "ListLoadBalancersOptionsTest")
 public class ListLoadBalancersOptionsTest {

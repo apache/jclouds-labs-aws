@@ -35,8 +35,6 @@ import com.google.inject.Inject;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_DescribeLoadBalancers.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class DescribeLoadBalancersResultHandler extends
          ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<LoadBalancer>> {

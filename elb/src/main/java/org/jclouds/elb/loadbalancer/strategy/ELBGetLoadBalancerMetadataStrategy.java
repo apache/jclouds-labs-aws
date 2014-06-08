@@ -30,10 +30,6 @@ import org.jclouds.loadbalancer.strategy.GetLoadBalancerMetadataStrategy;
 
 import com.google.common.base.Function;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Singleton
 public class ELBGetLoadBalancerMetadataStrategy implements GetLoadBalancerMetadataStrategy {
 

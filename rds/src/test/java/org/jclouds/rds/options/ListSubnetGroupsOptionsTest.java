@@ -25,8 +25,6 @@ import com.google.common.collect.ImmutableSet;
 
 /**
  * Tests behavior of {@code ListSubnetGroupsOptions}
- * 
- * @author Adrian Cole
  */
 @Test(groups = "unit", testName = "ListSubnetGroupsOptionsTest")
 public class ListSubnetGroupsOptionsTest {

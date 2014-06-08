@@ -23,9 +23,6 @@ import com.google.common.base.Objects;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Iterables;
 
-/**
- * @author Adrian Cole
- */
 public class RegionAndName {
    public static RegionAndName fromSlashEncoded(String name) {
       Iterable<String> parts = Splitter.on('/').split(checkNotNull(name, "name"));

@@ -19,10 +19,6 @@ package org.jclouds.elb;
 import org.jclouds.loadbalancer.internal.BaseLoadBalancerServiceApiMetadataTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "unit", testName = "ELBApiMetadataTest")
 public class ELBApiMetadataTest extends BaseLoadBalancerServiceApiMetadataTest {
 

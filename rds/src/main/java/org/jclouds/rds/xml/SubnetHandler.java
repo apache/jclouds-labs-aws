@@ -27,8 +27,6 @@ import org.xml.sax.SAXException;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_Subnet.html"
  *      >xml</a>
- * 
- * @author Adrian Cole
  */
 public class SubnetHandler extends ParseSax.HandlerForGeneratedRequestWithResult<Subnet> {
 

@@ -30,8 +30,6 @@ import com.google.common.collect.Sets;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_DescribeInstances.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class ListInstancesOptions extends BaseHttpRequestOptions implements Cloneable {
 

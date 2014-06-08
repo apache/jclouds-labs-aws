@@ -19,10 +19,6 @@ package org.jclouds.aws.rds.features;
 import org.jclouds.rds.features.InstanceApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSInstanceApiLiveTest")
 public class AWSInstanceApiLiveTest extends InstanceApiLiveTest {
 

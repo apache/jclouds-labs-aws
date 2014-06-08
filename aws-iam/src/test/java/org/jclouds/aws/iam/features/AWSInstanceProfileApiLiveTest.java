@@ -19,9 +19,6 @@ package org.jclouds.aws.iam.features;
 import org.jclouds.iam.features.InstanceProfileApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSInstanceProfileApiLiveTest")
 public class AWSInstanceProfileApiLiveTest extends InstanceProfileApiLiveTest {
    public AWSInstanceProfileApiLiveTest() {

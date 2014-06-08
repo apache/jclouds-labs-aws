@@ -35,8 +35,6 @@ import com.google.common.collect.ImmutableSet;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/ConfigureSubnetGroup.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class SubnetGroup {
 

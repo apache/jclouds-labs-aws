@@ -31,10 +31,6 @@ import org.jclouds.loadbalancer.strategy.DestroyLoadBalancerStrategy;
 import org.jclouds.loadbalancer.strategy.GetLoadBalancerMetadataStrategy;
 import org.jclouds.logging.Logger;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Singleton
 public class ELBDestroyLoadBalancerStrategy implements DestroyLoadBalancerStrategy {
    @Resource

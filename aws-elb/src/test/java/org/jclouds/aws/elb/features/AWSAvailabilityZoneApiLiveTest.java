@@ -19,10 +19,6 @@ package org.jclouds.aws.elb.features;
 import org.jclouds.elb.features.AvailabilityZoneApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSAvailabilityZoneApiLiveTest")
 public class AWSAvailabilityZoneApiLiveTest extends AvailabilityZoneApiLiveTest {
 

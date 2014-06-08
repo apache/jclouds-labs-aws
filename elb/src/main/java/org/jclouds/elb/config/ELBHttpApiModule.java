@@ -22,8 +22,6 @@ import org.jclouds.rest.ConfiguresHttpApi;
 
 /**
  * Configures the ELB connection.
- * 
- * @author Adrian Cole
  */
 @ConfiguresHttpApi
 public class ELBHttpApiModule extends FormSigningHttpApiModule<ELBApi> {

@@ -25,8 +25,6 @@ import org.xml.sax.Attributes;
 
 /**
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetGroupPolicy.html" />
- * 
- * @author Adrian Cole
  */
 public class PolicyHandler extends ParseSax.HandlerForGeneratedRequestWithResult<Policy> {
 

@@ -23,8 +23,6 @@ import org.testng.annotations.Test;
 
 /**
  * Tests behavior of {@code IAM}.
- * 
- * @author Adrian Cole
  */
 @Test(groups = "live", singleThreaded = true, testName = "IAMApiLiveTest")
 public class IAMApiLiveTest extends BaseIAMApiLiveTest {

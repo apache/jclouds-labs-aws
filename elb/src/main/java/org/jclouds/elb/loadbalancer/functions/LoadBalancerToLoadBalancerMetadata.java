@@ -35,10 +35,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterables;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Singleton
 public class LoadBalancerToLoadBalancerMetadata implements Function<LoadBalancerInRegion, LoadBalancerMetadata> {
 

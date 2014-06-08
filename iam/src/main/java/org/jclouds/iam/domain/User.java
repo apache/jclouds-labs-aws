@@ -27,8 +27,6 @@ import com.google.common.base.Optional;
 
 /**
  * @see <a href="http://docs.amazonwebservices.com/IAM/latest/APIReference/API_GetUser.html" />
- * 
- * @author Adrian Cole
  */
 public final class User {
 

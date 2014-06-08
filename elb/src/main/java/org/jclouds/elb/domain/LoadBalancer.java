@@ -47,8 +47,6 @@ import com.google.common.collect.ImmutableSet;
  * @see <a
  *     href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/arch-loadbalancing.html"
  *     >doc</a>
- * 
- * @author Adrian Cole
  */
 public class LoadBalancer {
    public static Builder<?> builder() {

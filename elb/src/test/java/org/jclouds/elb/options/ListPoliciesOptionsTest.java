@@ -26,8 +26,6 @@ import com.google.common.collect.ImmutableSet;
 
 /**
  * Tests behavior of {@code ListPoliciesOptions}
- * 
- * @author Adrian Cole
  */
 @Test(groups = "unit", testName = "ListPoliciesOptionsTest")
 public class ListPoliciesOptionsTest {

@@ -20,9 +20,6 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import org.jclouds.elb.domain.LoadBalancer;
 
-/**
- * @author Adrian Cole
- */
 public class LoadBalancerInRegion extends RegionAndName {
    protected final LoadBalancer loadBalancer;
 

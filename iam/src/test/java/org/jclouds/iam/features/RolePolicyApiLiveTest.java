@@ -26,9 +26,6 @@ import org.jclouds.iam.domain.Role;
 import org.jclouds.iam.internal.BaseIAMApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "RolePolicyApiLiveTest")
 public class RolePolicyApiLiveTest extends BaseIAMApiLiveTest {
 

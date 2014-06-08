@@ -30,8 +30,6 @@ import com.google.common.collect.Sets;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_DescribeLoadBalancerPolicies.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class ListPoliciesOptions extends BaseHttpRequestOptions implements Cloneable {
 

@@ -32,8 +32,6 @@ import org.xml.sax.SAXException;
 /**
  * @see <a href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_GetLoadBalancer.html"
  *      />
- * 
- * @author Adrian Cole
  */
 public class LoadBalancerHandler extends ParseSax.HandlerForGeneratedRequestWithResult<LoadBalancer> {
    protected final DateService dateService;

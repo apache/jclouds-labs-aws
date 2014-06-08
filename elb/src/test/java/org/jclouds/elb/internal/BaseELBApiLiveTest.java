@@ -20,10 +20,6 @@ import org.jclouds.apis.BaseApiLiveTest;
 import org.jclouds.elb.ELBApi;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live")
 public class BaseELBApiLiveTest extends BaseApiLiveTest<ELBApi> {
    public BaseELBApiLiveTest() {

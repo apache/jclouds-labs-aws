@@ -31,9 +31,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "unit", testName = "UserApiExpectTest")
 public class UserApiExpectTest extends BaseIAMApiExpectTest {
 

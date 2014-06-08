@@ -28,8 +28,6 @@ import org.xml.sax.Attributes;
 
 /**
  * @see <a href="http://docs.aws.amazon.com/IAM/latest/APIReference/API_GetInstanceProfile.html" />
- * 
- * @author Adrian Cole
  */
 public class InstanceProfileHandler extends ParseSax.HandlerForGeneratedRequestWithResult<InstanceProfile> {
 

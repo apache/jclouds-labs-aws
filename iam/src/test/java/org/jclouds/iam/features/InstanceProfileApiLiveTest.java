@@ -30,9 +30,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
 
-/**
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "InstanceProfileApiLiveTest")
 public class InstanceProfileApiLiveTest extends BaseIAMApiLiveTest {
 

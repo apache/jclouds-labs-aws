@@ -23,8 +23,6 @@ import org.jclouds.rest.ConfiguresHttpApi;
 
 /**
  * Configures the RDS connection.
- * 
- * @author Adrian Cole
  */
 @ConfiguresHttpApi
 public class RDSHttpApiModule extends FormSigningHttpApiModule<RDSApi> {

@@ -31,8 +31,6 @@ import com.google.common.collect.Maps;
  * @see <a
  *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference/API_PolicyTypeDescription.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class PolicyType {
 

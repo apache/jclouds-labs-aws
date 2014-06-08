@@ -35,8 +35,6 @@ import com.google.inject.Inject;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/APIReference/API_DescribeInstances.html"
  *      >docs</a>
- * 
- * @author Adrian Cole
  */
 public class DescribeDBInstancesResultHandler extends
          ParseSax.HandlerForGeneratedRequestWithResult<IterableWithMarker<Instance>> {

@@ -19,10 +19,6 @@ package org.jclouds.aws.rds.features;
 import org.jclouds.rds.features.SecurityGroupApiLiveTest;
 import org.testng.annotations.Test;
 
-/**
- * 
- * @author Adrian Cole
- */
 @Test(groups = "live", testName = "AWSSecurityGroupApiLiveTest")
 public class AWSSecurityGroupApiLiveTest extends SecurityGroupApiLiveTest {
 

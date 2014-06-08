@@ -19,10 +19,6 @@ package org.jclouds.elb.internal;
 import org.jclouds.elb.ELBApi;
 
 
-/**
- * 
- * @author Adrian Cole
- */
 public class BaseELBApiExpectTest extends BaseELBExpectTest<ELBApi> {
 
 }

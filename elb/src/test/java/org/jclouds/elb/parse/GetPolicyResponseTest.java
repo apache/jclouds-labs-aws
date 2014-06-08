@@ -25,9 +25,6 @@ import org.jclouds.elb.xml.PolicyHandler;
 import org.jclouds.http.functions.BaseHandlerTest;
 import org.testng.annotations.Test;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "GetPolicyResponseTest")
 public class GetPolicyResponseTest extends BaseHandlerTest {

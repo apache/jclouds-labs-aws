@@ -46,8 +46,6 @@ import com.google.common.collect.ImmutableSet;
  * @see <a
  *      href="http://docs.amazonwebservices.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html"
  *      >doc</a>
- * 
- * @author Adrian Cole
  */
 public class SecurityGroup {
    public static Builder<?> builder() {

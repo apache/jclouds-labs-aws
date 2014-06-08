@@ -26,8 +26,6 @@ import com.google.common.base.Objects;
 
 /**
  * @see <a href="http://docs.amazonwebservices.com/IAM/latest/APIReference/API_GetRole.html" />
- * 
- * @author Adrian Cole
  */
 public final class Role {
 

@@ -30,9 +30,6 @@ import com.google.common.annotations.Beta;
 import com.google.common.base.Function;
 import com.google.common.base.Optional;
 
-/**
- * @author Adrian Cole
- */
 @Beta
 public class InstanceProfilesForRoleToPagedIterable extends
       Arg0ToPagedIterable<InstanceProfile, InstanceProfilesForRoleToPagedIterable> {

@@ -32,9 +32,6 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.net.HostAndPort;
 
-/**
- * @author Adrian Cole
- */
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
 @Test(groups = "unit", testName = "DescribeDBInstancesResponseTest")
 public class DescribeDBInstancesResponseTest extends BaseHandlerTest {
