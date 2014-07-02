@@ -33,6 +33,8 @@
   <packaging>bundle</packaging>
 
   <properties>
+    <test.aws.identity>FIXME_IDENTITY</test.aws.identity>
+    <test.aws.credential>FIXME_CREDENTIAL</test.aws.credential>
     <test.elb.endpoint>https://elasticloadbalancing.us-east-1.amazonaws.com</test.elb.endpoint>
     <test.elb.api-version>2012-06-01</test.elb.api-version>
     <test.elb.build-version />
