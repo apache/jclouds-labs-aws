@@ -89,7 +89,7 @@ public class SubnetGroupHandler extends ParseSax.HandlerForGeneratedRequestWithR
       } else if (inSubnets) {
          subnetHandler.endElement(uri, name, qName);
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

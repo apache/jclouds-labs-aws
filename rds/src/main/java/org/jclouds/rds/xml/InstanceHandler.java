@@ -142,7 +142,7 @@ public class InstanceHandler extends ParseSax.HandlerForGeneratedRequestWithResu
       } else if (equalsOrSuffix(qName, "MasterUsername")) {
          builder.masterUsername(currentOrNull(currentText));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

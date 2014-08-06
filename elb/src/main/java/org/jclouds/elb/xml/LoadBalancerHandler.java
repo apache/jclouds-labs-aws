@@ -143,7 +143,7 @@ public class LoadBalancerHandler extends ParseSax.HandlerForGeneratedRequestWith
       } else if (inListeners) {
          listenerHandler.endElement(uri, name, qName);
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    protected void endMember(String uri, String name, String qName) throws SAXException {

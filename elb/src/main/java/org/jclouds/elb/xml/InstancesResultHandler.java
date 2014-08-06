@@ -30,7 +30,7 @@ public class InstancesResultHandler extends ParseSax.HandlerWithResult<Set<Strin
    public void endElement(String uri, String localName, String qName) {
       if (qName.equals("InstanceId"))
          instanceIds.add(currentText.toString().trim());
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override

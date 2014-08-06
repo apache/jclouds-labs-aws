@@ -57,7 +57,7 @@ public class SubnetHandler extends ParseSax.HandlerForGeneratedRequestWithResult
       } else if (equalsOrSuffix(qName, "SubnetStatus")) {
          builder.status(currentOrNull(currentText));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

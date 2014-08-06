@@ -63,7 +63,7 @@ public class ListPoliciesResultHandler extends
       } else if (qName.equals("Marker")) {
          afterMarker = currentOrNull(currentText);
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override

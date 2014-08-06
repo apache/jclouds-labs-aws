@@ -30,7 +30,7 @@ public class AvailabilityZonesResultHandler extends ParseSax.HandlerWithResult<S
    public void endElement(String uri, String localName, String qName) {
       if (qName.equals("member"))
          zones.add(currentText.toString().trim());
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override

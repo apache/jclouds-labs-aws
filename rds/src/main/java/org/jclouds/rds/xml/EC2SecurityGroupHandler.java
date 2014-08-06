@@ -62,7 +62,7 @@ public class EC2SecurityGroupHandler extends ParseSax.HandlerForGeneratedRequest
          builder.rawStatus(rawStatus);
          builder.status(Status.fromValue(rawStatus));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

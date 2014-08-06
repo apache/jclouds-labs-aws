@@ -61,7 +61,7 @@ public class HealthCheckHandler extends ParseSax.HandlerForGeneratedRequestWithR
       } else if (equalsOrSuffix(qName, "UnhealthyThreshold")) {
          builder.unhealthyThreshold(Integer.parseInt(currentOrNull(currentText)));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

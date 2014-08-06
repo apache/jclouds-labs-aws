@@ -85,7 +85,7 @@ public class DescribeDBSecurityGroupsResultHandler extends
       } else if (inSecurityGroups) {
          securityGroupHander.endElement(uri, name, qName);
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

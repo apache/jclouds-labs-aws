@@ -73,7 +73,7 @@ public class RoleHandler extends ParseSax.HandlerForGeneratedRequestWithResult<R
             builder.createDate(dateService.iso8601DateParse(currentOrNull(currentText)));
          }
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override

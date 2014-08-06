@@ -65,7 +65,7 @@ public class UserHandler extends ParseSax.HandlerForGeneratedRequestWithResult<U
       } else if (qName.equals("CreateDate")) {
          builder.createDate(dateService.iso8601SecondsDateParse(currentOrNull(currentText)));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override

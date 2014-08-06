@@ -87,7 +87,7 @@ public class DescribeDBInstancesResultHandler extends
          instanceHandler.endElement(uri, name, qName);
       }
 
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

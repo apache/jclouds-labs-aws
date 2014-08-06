@@ -79,7 +79,7 @@ public class ListenerWithPoliciesHandler extends ParseSax.HandlerForGeneratedReq
       } else if (equalsOrSuffix(qName, "SSLCertificateId")) {
          builder.SSLCertificateId(currentOrNull(currentText));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

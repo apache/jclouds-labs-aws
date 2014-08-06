@@ -85,7 +85,7 @@ public class PolicyTypeHandler extends ParseSax.HandlerForGeneratedRequestWithRe
       } else if (inAttributeTypes) {
          attributeTypeHandler.endElement(uri, name, qName);
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    protected void endMember(String uri, String name, String qName) throws SAXException {

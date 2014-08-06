@@ -59,7 +59,7 @@ public class InstanceStateHandler extends ParseSax.HandlerForGeneratedRequestWit
       } else if (equalsOrSuffix(qName, "State")) {
          builder.state(currentOrNull(currentText));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

@@ -102,7 +102,7 @@ public class SecurityGroupHandler extends ParseSax.HandlerForGeneratedRequestWit
       } else if (inIPRanges) {
          ipRangeHandler.endElement(uri, name, qName);
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

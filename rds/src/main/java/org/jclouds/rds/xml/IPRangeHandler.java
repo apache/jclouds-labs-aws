@@ -58,7 +58,7 @@ public class IPRangeHandler extends ParseSax.HandlerForGeneratedRequestWithResul
          builder.rawStatus(rawStatus);
          builder.status(Status.fromValue(rawStatus));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

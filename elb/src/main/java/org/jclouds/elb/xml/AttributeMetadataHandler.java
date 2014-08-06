@@ -80,7 +80,7 @@ public class AttributeMetadataHandler extends ParseSax.HandlerForGeneratedReques
       } else if (equalsOrSuffix(qName, "UnhealthyThreshold")) {
          builder.description(currentOrNull(currentText));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

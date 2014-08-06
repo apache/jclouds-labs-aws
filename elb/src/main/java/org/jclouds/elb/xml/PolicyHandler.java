@@ -69,7 +69,7 @@ public class PolicyHandler extends ParseSax.HandlerForGeneratedRequestWithResult
             builder.attribute(key, value);
          key = null;
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    /**

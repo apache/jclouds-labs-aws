@@ -90,7 +90,7 @@ public class InstanceProfileHandler extends ParseSax.HandlerForGeneratedRequestW
             builder.createDate(dateService.iso8601DateParse(currentOrNull(currentText)));
          }
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override

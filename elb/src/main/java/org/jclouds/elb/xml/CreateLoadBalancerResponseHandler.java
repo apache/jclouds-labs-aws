@@ -38,7 +38,7 @@ public class CreateLoadBalancerResponseHandler extends HandlerWithResult<String>
        if (qName.equals("DNSName")) {
           dnsName = currentOrNull();
        }
-       currentText = new StringBuilder();
+       currentText.setLength(0);
     }
 
     public void characters(char ch[], int start, int length) {

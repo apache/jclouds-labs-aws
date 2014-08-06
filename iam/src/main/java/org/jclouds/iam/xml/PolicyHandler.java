@@ -53,7 +53,7 @@ public class PolicyHandler extends ParseSax.HandlerForGeneratedRequestWithResult
       } else if (qName.equals("PolicyDocument")) {
          builder.document(urlDecode(currentOrNull(currentText)));
       }
-      currentText = new StringBuilder();
+      currentText.setLength(0);
    }
 
    @Override
