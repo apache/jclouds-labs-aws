@@ -18,6 +18,7 @@ package org.jclouds.rds.options;
 
 import org.jclouds.http.options.BaseHttpRequestOptions;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.collect.Multimap;
 
@@ -93,6 +94,6 @@ public class ListSubnetGroupsOptions extends BaseHttpRequestOptions implements C
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("marker", marker).toString();
+      return MoreObjects.toStringHelper(this).omitNullValues().add("marker", marker).toString();
    }
 }

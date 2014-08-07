@@ -18,6 +18,7 @@ package org.jclouds.rds.domain;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 /**
@@ -103,7 +104,7 @@ public class IPRange extends Authorization {
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("cidrIp", cidrIp).add("status", rawStatus).toString();
+      return MoreObjects.toStringHelper(this).omitNullValues().add("cidrIp", cidrIp).add("status", rawStatus).toString();
    }
 
 }

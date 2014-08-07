@@ -24,6 +24,7 @@ import java.util.Map;
 import org.jclouds.rds.domain.internal.BaseInstance;
 
 import com.google.common.base.CaseFormat;
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableMap;
@@ -365,7 +366,7 @@ public class Instance extends BaseInstance {
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("id", id).add("name", name.orNull())
+      return MoreObjects.toStringHelper(this).omitNullValues().add("id", id).add("name", name.orNull())
                .add("instanceClass", instanceClass).add("endpoint", endpoint.orNull()).add("status", rawStatus)
                .add("availabilityZone", availabilityZone.orNull()).add("multiAZ", multiAZ).add("engine", engine)
                .add("engineVersion", engineVersion).add("licenseModel", licenseModel)

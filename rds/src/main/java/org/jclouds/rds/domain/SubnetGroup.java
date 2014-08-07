@@ -20,8 +20,9 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.util.Set;
 
+import com.google.common.base.MoreObjects;
+import com.google.common.base.MoreObjects.ToStringHelper;
 import com.google.common.base.Objects;
-import com.google.common.base.Objects.ToStringHelper;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;
 
@@ -201,7 +202,7 @@ public class SubnetGroup {
    }
 
    protected ToStringHelper string() {
-      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("description", description)
+      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("description", description)
                .add("status", status).add("subnets", subnets).add("vpcId", vpcId.orNull());
    }
 

@@ -20,6 +20,7 @@ import java.util.Set;
 
 import org.jclouds.http.options.BaseHttpRequestOptions;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
@@ -134,6 +135,6 @@ public class ListLoadBalancersOptions extends BaseHttpRequestOptions implements 
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("marker", marker).add("names", names).toString();
+      return MoreObjects.toStringHelper(this).omitNullValues().add("marker", marker).add("names", names).toString();
    }
 }

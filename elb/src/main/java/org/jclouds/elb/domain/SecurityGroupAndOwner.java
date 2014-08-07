@@ -18,6 +18,7 @@ package org.jclouds.elb.domain;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 /**
@@ -120,7 +121,7 @@ public class SecurityGroupAndOwner {
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("owner", owner).toString();
+      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("owner", owner).toString();
    }
 
 }

@@ -21,6 +21,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.util.Date;
 import java.util.Set;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;
@@ -419,7 +420,7 @@ public class LoadBalancer {
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("createdTime", createdTime)
+      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("createdTime", createdTime)
             .add("dnsName", dnsName).add("healthCheck", healthCheck).add("instanceIds", instanceIds)
             .add("listeners", listeners).add("availabilityZones", availabilityZones).add("scheme", scheme.orNull())
             .add("sourceSecurityGroup", sourceSecurityGroup.orNull()).add("VPCId", VPCId.orNull())
