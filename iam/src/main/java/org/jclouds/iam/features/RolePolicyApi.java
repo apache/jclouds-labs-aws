@@ -54,6 +54,7 @@ public interface RolePolicyApi extends PolicyApi {
    @POST
    @Path("/")
    @FormParams(keys = "Action", values = "PutRolePolicy")
+   @Override
    void create(@FormParam("PolicyName") String name, @FormParam("PolicyDocument") String document);
 
    /**
@@ -65,6 +66,7 @@ public interface RolePolicyApi extends PolicyApi {
    @FormParams(keys = "Action", values = "ListRolePolicies")
    @XMLResponseParser(ListPoliciesResultHandler.class)
    @Transform(RolePoliciesToPagedIterable.class)
+   @Override
    PagedIterable<String> list();
 
    /**
@@ -75,6 +77,7 @@ public interface RolePolicyApi extends PolicyApi {
    @Path("/")
    @FormParams(keys = "Action", values = "ListRolePolicies")
    @XMLResponseParser(ListPoliciesResultHandler.class)
+   @Override
    IterableWithMarker<String> listFirstPage();
 
    /**
@@ -85,6 +88,7 @@ public interface RolePolicyApi extends PolicyApi {
    @Path("/")
    @FormParams(keys = "Action", values = "ListRolePolicies")
    @XMLResponseParser(ListPoliciesResultHandler.class)
+   @Override
    IterableWithMarker<String> listAt(@FormParam("Marker") String marker);
 
    /**
@@ -97,6 +101,7 @@ public interface RolePolicyApi extends PolicyApi {
    @FormParams(keys = "Action", values = "GetRolePolicy")
    @Fallback(NullOnNotFoundOr404.class)
    @Nullable
+   @Override
    Policy get(@FormParam("PolicyName") String name);
 
    /**
@@ -107,5 +112,6 @@ public interface RolePolicyApi extends PolicyApi {
    @Path("/")
    @FormParams(keys = "Action", values = "DeleteRolePolicy")
    @Fallback(VoidOnNotFoundOr404.class)
+   @Override
    void delete(@FormParam("PolicyName") String name);
 }
