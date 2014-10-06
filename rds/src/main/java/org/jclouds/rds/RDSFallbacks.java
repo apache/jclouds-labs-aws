@@ -17,24 +17,16 @@
 package org.jclouds.rds;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import static com.google.common.util.concurrent.Futures.immediateFuture;
 import static org.jclouds.Fallbacks.valOnNotFoundOr404;
 
 import org.jclouds.Fallback;
 import org.jclouds.aws.AWSResponseException;
-
-import com.google.common.util.concurrent.ListenableFuture;
 
 public final class RDSFallbacks {
    private RDSFallbacks() {
    }
 
    public static final class NullOnStateDeletingNotFoundOr404 implements Fallback<Object> {
-      @Override
-      public ListenableFuture<Object> create(Throwable t) throws Exception {
-         return immediateFuture(createOrPropagate(t));
-      }
-
       @Override
       public Object createOrPropagate(Throwable t) throws Exception {
          if (checkNotNull(t, "throwable") instanceof AWSResponseException) {
