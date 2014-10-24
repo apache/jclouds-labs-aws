@@ -18,7 +18,6 @@ package org.jclouds.rds.domain;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.base.Optional;
 
@@ -143,7 +142,7 @@ public class EC2SecurityGroup extends Authorization {
     */
    @Override
    public String toString() {
-      return MoreObjects.toStringHelper(this).omitNullValues().add("id", id.orNull()).add("name", name)
+      return Objects.toStringHelper(this).omitNullValues().add("id", id.orNull()).add("name", name)
                .add("ownerId", ownerId).add("status", rawStatus).toString();
    }
 

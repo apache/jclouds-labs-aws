@@ -21,7 +21,6 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.util.Map;
 import java.util.Set;
 
-import com.google.common.base.MoreObjects;
 import com.google.common.base.Function;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableSet;
@@ -165,7 +164,7 @@ public class PolicyType {
     */
    @Override
    public String toString() {
-      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("description", description)
+      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("description", description)
                .add("attributeMetadata", attributeMetadata).toString();
    }
 

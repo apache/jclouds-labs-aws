@@ -19,9 +19,8 @@ package org.jclouds.elb.domain;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.google.common.base.MoreObjects;
-import com.google.common.base.MoreObjects.ToStringHelper;
 import com.google.common.base.Objects;
+import com.google.common.base.Objects.ToStringHelper;
 
 /**
  * Elastic Load Balancing routinely checks the health of each load-balanced Amazon EC2 instance
@@ -220,7 +219,7 @@ public class HealthCheck {
    }
 
    protected ToStringHelper string() {
-      return MoreObjects.toStringHelper(this).omitNullValues().add("healthyThreshold", healthyThreshold).add("interval",
+      return Objects.toStringHelper(this).omitNullValues().add("healthyThreshold", healthyThreshold).add("interval",
                interval).add("target", target).add("timeout", timeout).add("unhealthyThreshold", unhealthyThreshold);
    }
 

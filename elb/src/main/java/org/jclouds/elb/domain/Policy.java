@@ -18,7 +18,6 @@ package org.jclouds.elb.domain;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
@@ -146,7 +145,7 @@ public class Policy {
     */
    @Override
    public String toString() {
-      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("typeName", typeName)
+      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("typeName", typeName)
                .add("attributes", attributes).toString();
    }
 

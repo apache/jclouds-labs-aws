@@ -20,7 +20,6 @@ import java.util.Set;
 
 import org.jclouds.http.options.BaseHttpRequestOptions;
 
-import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
@@ -150,7 +149,7 @@ public class ListPoliciesOptions extends BaseHttpRequestOptions implements Clone
     */
    @Override
    public String toString() {
-      return MoreObjects.toStringHelper(this).omitNullValues().add("loadBalancerName", loadBalancerName)
+      return Objects.toStringHelper(this).omitNullValues().add("loadBalancerName", loadBalancerName)
                .add("names", names).toString();
    }
 }

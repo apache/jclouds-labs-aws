@@ -18,9 +18,8 @@ package org.jclouds.rds.domain.internal;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.google.common.base.MoreObjects;
-import com.google.common.base.MoreObjects.ToStringHelper;
 import com.google.common.base.Objects;
+import com.google.common.base.Objects.ToStringHelper;
 import com.google.common.base.Optional;
 
 public class BaseInstance {
@@ -192,7 +191,7 @@ public class BaseInstance {
    }
 
    protected ToStringHelper string() {
-      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name.orNull()).add("instanceClass", instanceClass)
+      return Objects.toStringHelper(this).omitNullValues().add("name", name.orNull()).add("instanceClass", instanceClass)
                .add("engine", engine).add("masterUsername", masterUsername)
                .add("allocatedStorageGB", allocatedStorageGB);
    }
