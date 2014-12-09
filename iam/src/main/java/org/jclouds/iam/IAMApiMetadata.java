@@ -22,12 +22,16 @@ import static org.jclouds.aws.reference.AWSConstants.PROPERTY_HEADER_TAG;
 import java.net.URI;
 import java.util.Properties;
 
+import org.jclouds.apis.ApiMetadata;
 import org.jclouds.iam.config.IAMHttpApiModule;
 import org.jclouds.rest.internal.BaseHttpApiMetadata;
+
+import com.google.auto.service.AutoService;
 
 /**
  * Implementation of {@link ApiMetadata} for Amazon's IAM api.
  */
+@AutoService(ApiMetadata.class)
 public class IAMApiMetadata extends BaseHttpApiMetadata<IAMApi> {
 
    @Override

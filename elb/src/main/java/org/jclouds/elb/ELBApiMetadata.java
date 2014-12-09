@@ -22,17 +22,20 @@ import static org.jclouds.aws.reference.AWSConstants.PROPERTY_HEADER_TAG;
 import java.net.URI;
 import java.util.Properties;
 
+import org.jclouds.apis.ApiMetadata;
 import org.jclouds.elb.config.ELBHttpApiModule;
 import org.jclouds.elb.loadbalancer.config.ELBLoadBalancerContextModule;
 import org.jclouds.loadbalancer.LoadBalancerServiceContext;
 import org.jclouds.rest.internal.BaseHttpApiMetadata;
 
+import com.google.auto.service.AutoService;
 import com.google.common.collect.ImmutableSet;
 import com.google.inject.Module;
 
 /**
  * Implementation of {@link ApiMetadata} for Amazon's Elastic Load Balancing api.
  */
+@AutoService(ApiMetadata.class)
 public class ELBApiMetadata extends BaseHttpApiMetadata<ELBApi> {
 
    @Override
@@ -47,14 +50,14 @@ public class ELBApiMetadata extends BaseHttpApiMetadata<ELBApi> {
    protected ELBApiMetadata(Builder builder) {
       super(Builder.class.cast(builder));
    }
-   
+
    public static Properties defaultProperties() {
       Properties properties = BaseHttpApiMetadata.defaultProperties();
       properties.setProperty(PROPERTY_AUTH_TAG, "AWS");
       properties.setProperty(PROPERTY_HEADER_TAG, "amz");
       return properties;
    }
-   
+
    public static class Builder extends BaseHttpApiMetadata.Builder<ELBApi, Builder> {
 
       protected Builder() {

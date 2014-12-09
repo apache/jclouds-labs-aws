@@ -23,11 +23,12 @@ import org.jclouds.iam.IAMApiMetadata;
 import org.jclouds.providers.ProviderMetadata;
 import org.jclouds.providers.internal.BaseProviderMetadata;
 
+import com.google.auto.service.AutoService;
+
 /**
- * Implementation of @ link org.jclouds.types.ProviderMetadata} for Amazon's IAM
- * provider.
-*
-*/
+ * Implementation of {@link ProviderMetadata} for Amazon's IAM provider.
+ */
+@AutoService(ProviderMetadata.class)
 public class AWSIAMProviderMetadata extends BaseProviderMetadata {
 
    public static Builder builder() {
@@ -38,7 +39,7 @@ public class AWSIAMProviderMetadata extends BaseProviderMetadata {
    public Builder toBuilder() {
       return builder().fromProviderMetadata(this);
    }
-   
+
    public AWSIAMProviderMetadata() {
       super(builder());
    }
@@ -51,7 +52,7 @@ public class AWSIAMProviderMetadata extends BaseProviderMetadata {
       Properties properties = new Properties();
       return properties;
    }
-   
+
    public static class Builder extends BaseProviderMetadata.Builder {
 
       protected Builder(){
@@ -70,7 +71,7 @@ public class AWSIAMProviderMetadata extends BaseProviderMetadata {
       public AWSIAMProviderMetadata build() {
          return new AWSIAMProviderMetadata(this);
       }
-      
+
       @Override
       public Builder fromProviderMetadata(ProviderMetadata in) {
          super.fromProviderMetadata(in);
