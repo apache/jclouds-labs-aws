@@ -35,10 +35,12 @@ import org.jclouds.elb.ELBApiMetadata;
 import org.jclouds.providers.ProviderMetadata;
 import org.jclouds.providers.internal.BaseProviderMetadata;
 
+import com.google.auto.service.AutoService;
+
 /**
- * Implementation of @ link org.jclouds.types.ProviderMetadata} for Amazon's Elastic Load Balancing
- * provider.
+ * Implementation of {@link ProviderMetadata} for Amazon's Elastic Load Balancing provider.
  */
+@AutoService(ProviderMetadata.class)
 public class AWSELBProviderMetadata extends BaseProviderMetadata {
 
    public static Builder builder() {
@@ -49,7 +51,7 @@ public class AWSELBProviderMetadata extends BaseProviderMetadata {
    public Builder toBuilder() {
       return Builder.class.cast(builder().fromProviderMetadata(this));
    }
-   
+
    public AWSELBProviderMetadata() {
       super(builder());
    }
@@ -68,7 +70,7 @@ public class AWSELBProviderMetadata extends BaseProviderMetadata {
       properties.setProperty(PROPERTY_REGION + "." + US_WEST_2 + ".endpoint",
             "https://elasticloadbalancing.us-west-2.amazonaws.com");
       properties.setProperty(PROPERTY_REGION + "." + SA_EAST_1 + ".endpoint",
-            "https://elasticloadbalancing.sa-east-1.amazonaws.com");      
+            "https://elasticloadbalancing.sa-east-1.amazonaws.com");
       properties.setProperty(PROPERTY_REGION + "." + EU_WEST_1 + ".endpoint",
             "https://elasticloadbalancing.eu-west-1.amazonaws.com");
       properties.setProperty(PROPERTY_REGION + "." + AP_SOUTHEAST_1 + ".endpoint",
@@ -80,7 +82,7 @@ public class AWSELBProviderMetadata extends BaseProviderMetadata {
       properties.setProperty(PROPERTY_ZONECLIENT_ENDPOINT, "https://ec2.us-east-1.amazonaws.com");
       return properties;
    }
-   
+
    public static class Builder extends BaseProviderMetadata.Builder {
 
       protected Builder(){

@@ -22,15 +22,18 @@ import static org.jclouds.aws.reference.AWSConstants.PROPERTY_HEADER_TAG;
 import java.net.URI;
 import java.util.Properties;
 
+import org.jclouds.apis.ApiMetadata;
 import org.jclouds.rds.config.RDSHttpApiModule;
 import org.jclouds.rest.internal.BaseHttpApiMetadata;
 
+import com.google.auto.service.AutoService;
 import com.google.common.collect.ImmutableSet;
 import com.google.inject.Module;
 
 /**
  * Implementation of {@link ApiMetadata} for Amazon's Relational Database Service api.
  */
+@AutoService(ApiMetadata.class)
 public class RDSApiMetadata extends BaseHttpApiMetadata<RDSApi> {
 
    @Override
@@ -45,14 +48,14 @@ public class RDSApiMetadata extends BaseHttpApiMetadata<RDSApi> {
    protected RDSApiMetadata(Builder builder) {
       super(Builder.class.cast(builder));
    }
-   
+
    public static Properties defaultProperties() {
       Properties properties = BaseHttpApiMetadata.defaultProperties();
       properties.setProperty(PROPERTY_AUTH_TAG, "AWS");
       properties.setProperty(PROPERTY_HEADER_TAG, "amz");
       return properties;
    }
-   
+
    public static class Builder extends BaseHttpApiMetadata.Builder<RDSApi, Builder> {
 
       protected Builder() {
