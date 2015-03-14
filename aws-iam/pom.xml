@@ -22,7 +22,7 @@
   <parent>
     <groupId>org.apache.jclouds.labs</groupId>
     <artifactId>jclouds-labs-aws</artifactId>
-    <version>1.9.0</version>
+    <version>2.0.0-SNAPSHOT</version>
   </parent>
 
   <!-- TODO: when out of labs, switch to org.jclouds.provider -->
@@ -65,14 +65,14 @@
     <dependency>
       <groupId>org.apache.jclouds</groupId>
       <artifactId>jclouds-core</artifactId>
-      <version>1.9.0</version>
+      <version>2.0.0-SNAPSHOT</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.jclouds.driver</groupId>
       <artifactId>jclouds-log4j</artifactId>
-      <version>1.9.0</version>
+      <version>2.0.0-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
