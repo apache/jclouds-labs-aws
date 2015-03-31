@@ -200,7 +200,7 @@ public class InstanceRequest extends BaseInstance {
       this.autoMinorVersionUpgrade = autoMinorVersionUpgrade;
       this.port = checkNotNull(port, "port");
       this.characterSet = checkNotNull(characterSet, "characterSet");
-      this.backupRetentionPeriod = checkNotNull(backupRetentionPeriod, "backupRetentionPeriod");
+      this.backupRetentionPeriod = backupRetentionPeriod;
       this.subnetGroup = checkNotNull(subnetGroup, "subnetGroup");
       this.securityGroups = ImmutableSet.copyOf(checkNotNull(securityGroups, "securityGroups"));
       this.masterPassword = checkNotNull(masterPassword, "masterPassword");
