@@ -43,10 +43,10 @@ public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
                                    .addFormParam("PolicyDocument", policy)
                                    .addFormParam("PolicyName", "S3AccessPolicy")
                                    .addFormParam("RoleName", "S3Access")
-                                   .addFormParam("Signature", "CEf5SvDv%2BLBRwlZI/3nBghWXFHC1nMfOFccfAITNjOk%3D")
+                                   .addFormParam("Signature", "CEf5SvDv+LBRwlZI/3nBghWXFHC1nMfOFccfAITNjOk=")
                                    .addFormParam("SignatureMethod", "HmacSHA256")
                                    .addFormParam("SignatureVersion", "2")
-                                   .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                   .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                    .addFormParam("Version", "2010-05-08")
                                    .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -67,10 +67,10 @@ public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
                                 .addFormParam("Action", "GetRolePolicy")
                                 .addFormParam("PolicyName", "S3AccessPolicy")
                                 .addFormParam("RoleName", "S3Access")
-                                .addFormParam("Signature", "MBTj0PjbypNbE7%2ByD2CJ/4NnzLFzV8RQNFPMI7GH03k%3D")
+                                .addFormParam("Signature", "MBTj0PjbypNbE7+yD2CJ/4NnzLFzV8RQNFPMI7GH03k=")
                                 .addFormParam("SignatureMethod", "HmacSHA256")
                                 .addFormParam("SignatureVersion", "2")
-                                .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                 .addFormParam("Version", "2010-05-08")
                                 .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -102,10 +102,10 @@ public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
                                    .addFormParam("Action", "DeleteRolePolicy")
                                    .addFormParam("PolicyName", "S3AccessPolicy")
                                    .addFormParam("RoleName", "S3Access")
-                                   .addFormParam("Signature", "eoLLlpvrOuh9MU4d9y1frBFc6RISnzejYwh0jgtKlhY%3D")
+                                   .addFormParam("Signature", "eoLLlpvrOuh9MU4d9y1frBFc6RISnzejYwh0jgtKlhY=")
                                    .addFormParam("SignatureMethod", "HmacSHA256")
                                    .addFormParam("SignatureVersion", "2")
-                                   .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                   .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                    .addFormParam("Version", "2010-05-08")
                                    .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -134,10 +134,10 @@ public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
                                  .addHeader("Host", "iam.amazonaws.com")
                                  .addFormParam("Action", "ListRolePolicies")
                                  .addFormParam("RoleName", "S3Access")
-                                 .addFormParam("Signature", "qsfSpvDHNcMtKgnCiiYO1cikVVYrEHo/vqSt0tztvuY%3D")
+                                 .addFormParam("Signature", "qsfSpvDHNcMtKgnCiiYO1cikVVYrEHo/vqSt0tztvuY=")
                                  .addFormParam("SignatureMethod", "HmacSHA256")
                                  .addFormParam("SignatureVersion", "2")
-                                 .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                 .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                  .addFormParam("Version", "2010-05-08")
                                  .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -164,10 +164,10 @@ public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
                                     .addFormParam("Action", "ListRolePolicies")
                                     .addFormParam("Marker", "MARKER")
                                     .addFormParam("RoleName", "S3Access")
-                                    .addFormParam("Signature", "GdoVCf2QZ7rld%2BHvIgbSPhjgwYtigqYXdi/LfVzlWaM%3D")
+                                    .addFormParam("Signature", "GdoVCf2QZ7rld+HvIgbSPhjgwYtigqYXdi/LfVzlWaM=")
                                     .addFormParam("SignatureMethod", "HmacSHA256")
                                     .addFormParam("SignatureVersion", "2")
-                                    .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                    .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                     .addFormParam("Version", "2010-05-08")
                                     .addFormParam("AWSAccessKeyId", "identity").build();
       

@@ -39,10 +39,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                    .addHeader("Host", "iam.amazonaws.com")
                                    .addFormParam("Action", "CreateInstanceProfile")
                                    .addFormParam("InstanceProfileName", "name")
-                                   .addFormParam("Signature", "UIosTnnvBVHY7m7rqz1489RQ90Mf81/aOXgh8x2mLWU%3D")
+                                   .addFormParam("Signature", "UIosTnnvBVHY7m7rqz1489RQ90Mf81/aOXgh8x2mLWU=")
                                    .addFormParam("SignatureMethod", "HmacSHA256")
                                    .addFormParam("SignatureVersion", "2")
-                                   .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                   .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                    .addFormParam("Version", "2010-05-08")
                                    .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -62,10 +62,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                 .addHeader("Host", "iam.amazonaws.com")
                                 .addFormParam("Action", "GetInstanceProfile")
                                 .addFormParam("InstanceProfileName", "name")
-                                .addFormParam("Signature", "uw5Ix/UFRqENsSWProK3%2BDMIezmvd3fFhTFMaooxFMg%3D")
+                                .addFormParam("Signature", "uw5Ix/UFRqENsSWProK3+DMIezmvd3fFhTFMaooxFMg=")
                                 .addFormParam("SignatureMethod", "HmacSHA256")
                                 .addFormParam("SignatureVersion", "2")
-                                .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                 .addFormParam("Version", "2010-05-08")
                                 .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -95,10 +95,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                    .addHeader("Host", "iam.amazonaws.com")
                                    .addFormParam("Action", "DeleteInstanceProfile")
                                    .addFormParam("InstanceProfileName", "name")
-                                   .addFormParam("Signature", "7W47Gj/6NE6p6drXMtqozYOlUOQN7CzbXgrIup4iowk%3D")
+                                   .addFormParam("Signature", "7W47Gj/6NE6p6drXMtqozYOlUOQN7CzbXgrIup4iowk=")
                                    .addFormParam("SignatureMethod", "HmacSHA256")
                                    .addFormParam("SignatureVersion", "2")
-                                   .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                   .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                    .addFormParam("Version", "2010-05-08")
                                    .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -126,10 +126,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                  .endpoint("https://iam.amazonaws.com/")
                                  .addHeader("Host", "iam.amazonaws.com")
                                  .addFormParam("Action", "ListInstanceProfiles")
-                                 .addFormParam("Signature", "i2V6ZeplNRVaZ/9XfD4jv53Qh%2BNQdl3ZuoZc%2BLguf0o%3D")
+                                 .addFormParam("Signature", "i2V6ZeplNRVaZ/9XfD4jv53Qh+NQdl3ZuoZc+Lguf0o=")
                                  .addFormParam("SignatureMethod", "HmacSHA256")
                                  .addFormParam("SignatureVersion", "2")
-                                 .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                 .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                  .addFormParam("Version", "2010-05-08")
                                  .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -154,10 +154,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                     .addHeader("Host", "iam.amazonaws.com")
                                     .addFormParam("Action", "ListInstanceProfiles")
                                     .addFormParam("Marker", "MARKER")
-                                    .addFormParam("Signature", "x7G5OvKxTIMEjl58OVurKrwf7wEA7exXSml63T89mSY%3D")
+                                    .addFormParam("Signature", "x7G5OvKxTIMEjl58OVurKrwf7wEA7exXSml63T89mSY=")
                                     .addFormParam("SignatureMethod", "HmacSHA256")
                                     .addFormParam("SignatureVersion", "2")
-                                    .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                    .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                     .addFormParam("Version", "2010-05-08")
                                     .addFormParam("AWSAccessKeyId", "identity").build();
       
@@ -176,10 +176,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                            .addHeader("Host", "iam.amazonaws.com")
                                            .addFormParam("Action", "ListInstanceProfiles")
                                            .addFormParam("PathPrefix", "/subdivision")
-                                           .addFormParam("Signature", "EEVeWhJhORpibHahIj1skQ3rhHaVb/iaqD22vIFQH7o%3D")
+                                           .addFormParam("Signature", "EEVeWhJhORpibHahIj1skQ3rhHaVb/iaqD22vIFQH7o=")
                                            .addFormParam("SignatureMethod", "HmacSHA256")
                                            .addFormParam("SignatureVersion", "2")
-                                           .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                           .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                            .addFormParam("Version", "2010-05-08")
                                            .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -205,10 +205,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                     .addFormParam("Action", "ListInstanceProfiles")
                                     .addFormParam("Marker", "MARKER")
                                     .addFormParam("PathPrefix", "/subdivision")
-                                    .addFormParam("Signature", "8xo94VlrqsoMoa6bpbqQbuVx8TLh8UmiQnc9QC58EhU%3D")
+                                    .addFormParam("Signature", "8xo94VlrqsoMoa6bpbqQbuVx8TLh8UmiQnc9QC58EhU=")
                                     .addFormParam("SignatureMethod", "HmacSHA256")
                                     .addFormParam("SignatureVersion", "2")
-                                    .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                    .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                     .addFormParam("Version", "2010-05-08")
                                     .addFormParam("AWSAccessKeyId", "identity").build();
       
@@ -242,10 +242,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                        .addFormParam("Action", "ListInstanceProfiles")
                        .addFormParam("Marker", "MARKER")
                        .addFormParam("PathPrefix", "/foo")
-                       .addFormParam("Signature", "IBRktzqZ/GE8Y7DZqsjuOUNfJZTbkCnOZnHAmzwtju8%3D")
+                       .addFormParam("Signature", "IBRktzqZ/GE8Y7DZqsjuOUNfJZTbkCnOZnHAmzwtju8=")
                        .addFormParam("SignatureMethod", "HmacSHA256")
                        .addFormParam("SignatureVersion", "2")
-                       .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                       .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                        .addFormParam("Version", "2010-05-08")
                        .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -266,10 +266,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                    .addFormParam("Action", "AddRoleToInstanceProfile")
                                    .addFormParam("InstanceProfileName", "name")
                                    .addFormParam("RoleName", "WebServer")
-                                   .addFormParam("Signature", "QTM12yD9GwUKEE9wqbt03VlfZ/%2BfO0UWe9SbNoI9d3c%3D")
+                                   .addFormParam("Signature", "QTM12yD9GwUKEE9wqbt03VlfZ/+fO0UWe9SbNoI9d3c=")
                                    .addFormParam("SignatureMethod", "HmacSHA256")
                                    .addFormParam("SignatureVersion", "2")
-                                   .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                   .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                    .addFormParam("Version", "2010-05-08")
                                    .addFormParam("AWSAccessKeyId", "identity").build();
 
@@ -290,10 +290,10 @@ public class InstanceProfileApiExpectTest extends BaseIAMApiExpectTest {
                                        .addFormParam("Action", "RemoveRoleFromInstanceProfile")
                                        .addFormParam("InstanceProfileName", "name")
                                        .addFormParam("RoleName", "WebServer")
-                                       .addFormParam("Signature", "o1Uz2bOwe8H3DOnyNL5TK9lNDoKvWo7CNhspN7ml5Sc%3D")
+                                       .addFormParam("Signature", "o1Uz2bOwe8H3DOnyNL5TK9lNDoKvWo7CNhspN7ml5Sc=")
                                        .addFormParam("SignatureMethod", "HmacSHA256")
                                        .addFormParam("SignatureVersion", "2")
-                                       .addFormParam("Timestamp", "2009-11-08T15%3A54%3A08.897Z")
+                                       .addFormParam("Timestamp", "2009-11-08T15:54:08.897Z")
                                        .addFormParam("Version", "2010-05-08")
                                        .addFormParam("AWSAccessKeyId", "identity").build();
 
