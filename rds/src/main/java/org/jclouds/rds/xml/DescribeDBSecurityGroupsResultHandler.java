@@ -92,7 +92,7 @@ public class DescribeDBSecurityGroupsResultHandler extends
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inSecurityGroups) {
          securityGroupHander.characters(ch, start, length);
       } else {

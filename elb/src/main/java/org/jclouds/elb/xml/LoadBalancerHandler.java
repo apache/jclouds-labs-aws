@@ -165,7 +165,7 @@ public class LoadBalancerHandler extends ParseSax.HandlerForGeneratedRequestWith
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inListeners) {
          listenerHandler.characters(ch, start, length);
       } else if (inHealthCheck) {

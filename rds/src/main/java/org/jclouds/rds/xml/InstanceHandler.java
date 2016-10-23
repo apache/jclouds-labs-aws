@@ -149,7 +149,7 @@ public class InstanceHandler extends ParseSax.HandlerForGeneratedRequestWithResu
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inSubnetGroup) {
          subnetGroupHandler.characters(ch, start, length);
       } else {

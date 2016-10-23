@@ -83,7 +83,7 @@ public class ListRolesResultHandler extends ParseSax.HandlerForGeneratedRequestW
    }
 
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inRoles) {
          roleHandler.characters(ch, start, length);
       } else {

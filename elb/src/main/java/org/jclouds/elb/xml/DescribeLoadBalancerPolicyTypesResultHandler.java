@@ -103,7 +103,7 @@ public class DescribeLoadBalancerPolicyTypesResultHandler extends
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inPolicyTypeTypes) {
          policyTypeHandler.characters(ch, start, length);
       } else {

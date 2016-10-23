@@ -90,7 +90,7 @@ public class ListInstanceProfilesResultHandler extends
    }
 
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inInstanceProfiles) {
          instanceProfileHandler.characters(ch, start, length);
       } else {

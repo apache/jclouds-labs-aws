@@ -109,7 +109,7 @@ public class SecurityGroupHandler extends ParseSax.HandlerForGeneratedRequestWit
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inEC2SecurityGroups) {
          ec2SecurityGroupHandler.characters(ch, start, length);
       } else if (inIPRanges) {

@@ -66,7 +66,7 @@ public class InstanceStateHandler extends ParseSax.HandlerForGeneratedRequestWit
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       currentText.append(ch, start, length);
    }
 

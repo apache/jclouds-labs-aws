@@ -38,7 +38,7 @@ public class InstancesResultHandler extends ParseSax.HandlerWithResult<Set<Strin
       return instanceIds;
    }
 
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       currentText.append(ch, start, length);
    }
 }

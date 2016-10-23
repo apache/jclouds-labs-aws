@@ -96,7 +96,7 @@ public class SubnetGroupHandler extends ParseSax.HandlerForGeneratedRequestWithR
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inSubnets) {
          subnetHandler.characters(ch, start, length);
       } else {

@@ -92,7 +92,7 @@ public class DescribeDBSubnetGroupsResultHandler extends
     * {@inheritDoc}
     */
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       if (inSubnetGroups) {
          subnetGroupHander.characters(ch, start, length);
       } else {

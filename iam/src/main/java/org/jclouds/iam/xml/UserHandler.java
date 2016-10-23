@@ -69,7 +69,7 @@ public class UserHandler extends ParseSax.HandlerForGeneratedRequestWithResult<U
    }
 
    @Override
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       currentText.append(ch, start, length);
    }
 }

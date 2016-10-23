@@ -38,7 +38,7 @@ public class AvailabilityZonesResultHandler extends ParseSax.HandlerWithResult<S
       return zones;
    }
 
-   public void characters(char ch[], int start, int length) {
+   public void characters(char[] ch, int start, int length) {
       currentText.append(ch, start, length);
    }
 }
