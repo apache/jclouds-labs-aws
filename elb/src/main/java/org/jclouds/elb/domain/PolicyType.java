@@ -95,7 +95,7 @@ public class PolicyType {
 
    protected PolicyType(String name, String description, Iterable<AttributeMetadata<?>> attributeMetadata) {
       this.name = checkNotNull(name, "name");
-      this.description = checkNotNull(description, "description");
+      this.description = description;
       this.attributeMetadata = ImmutableSet.copyOf(checkNotNull(attributeMetadata, "attributeMetadata"));
    }
 

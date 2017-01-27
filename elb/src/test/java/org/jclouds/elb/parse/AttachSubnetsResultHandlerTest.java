@@ -28,11 +28,11 @@ import org.testng.annotations.Test;
 import com.google.common.collect.ImmutableSet;
 
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
-@Test(groups = "unit", testName = "ZonesResultHandlerTest")
-public class AvailabilityZonesResultHandlerTest extends BaseHandlerTest {
+@Test(groups = "unit", testName = "AttachSubnetsResultHandlerTest", singleThreaded = true)
+public class AttachSubnetsResultHandlerTest extends BaseHandlerTest {
 
    public void test() {
-      InputStream is = getClass().getResourceAsStream("/zones.xml");
+      InputStream is = getClass().getResourceAsStream("/attach_load_balancer_to_subnets.xml");
 
       Set<String> expected = expected();
 
@@ -40,10 +40,10 @@ public class AvailabilityZonesResultHandlerTest extends BaseHandlerTest {
       Set<String> result = factory.create(handler).parse(is);
 
       assertEquals(result.toString(), expected.toString());
-
    }
 
    public Set<String> expected() {
-      return ImmutableSet.of("us-east-1c");
+      return ImmutableSet.of("subnet-3561b05e");
    }
+
 }

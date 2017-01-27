@@ -22,20 +22,20 @@ import org.jclouds.http.functions.ParseSax;
 
 import com.google.common.collect.Sets;
 
-public class AvailabilityZonesResultHandler extends ParseSax.HandlerWithResult<Set<String>> {
+public class MemberResultHandler extends ParseSax.HandlerWithResult<Set<String>> {
 
-   private Set<String> zones = Sets.newLinkedHashSet();
+   private Set<String> members = Sets.newLinkedHashSet();
    private StringBuilder currentText = new StringBuilder();
 
    public void endElement(String uri, String localName, String qName) {
       if (qName.equals("member"))
-         zones.add(currentText.toString().trim());
+         members.add(currentText.toString().trim());
       currentText.setLength(0);
    }
 
    @Override
    public Set<String> getResult() {
-      return zones;
+      return members;
    }
 
    public void characters(char[] ch, int start, int length) {

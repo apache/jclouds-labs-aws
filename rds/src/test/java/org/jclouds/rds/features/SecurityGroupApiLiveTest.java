@@ -109,7 +109,7 @@ public class SecurityGroupApiLiveTest extends BaseRDSApiLiveTest {
    }
 
    @Override
-   @AfterClass(groups = "live")
+   @AfterClass(groups = "live", alwaysRun = true)
    protected void tearDown() {
       api().delete(SECURITYGROUP);
       super.tearDown();

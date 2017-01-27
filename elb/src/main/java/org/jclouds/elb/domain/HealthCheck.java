@@ -29,7 +29,7 @@ import com.google.common.base.Objects.ToStringHelper;
  * 
  * 
  * @see <a
- *      href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/DeveloperGuide/ConfigureHealthCheck.html"
+ *      href="http://docs.aws.amazon.com/elasticloadbalancing/2012-06-01/APIReference/API_ConfigureHealthCheck.html"
  *      >doc</a>
  */
 public class HealthCheck {

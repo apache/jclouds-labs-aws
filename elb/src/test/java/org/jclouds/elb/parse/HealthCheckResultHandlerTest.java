@@ -19,31 +19,35 @@ package org.jclouds.elb.parse;
 import static org.testng.Assert.assertEquals;
 
 import java.io.InputStream;
-import java.util.Set;
 
-import org.jclouds.elb.xml.MemberResultHandler;
+import org.jclouds.elb.domain.HealthCheck;
+import org.jclouds.elb.xml.HealthCheckHandler;
 import org.jclouds.http.functions.BaseHandlerTest;
 import org.testng.annotations.Test;
 
-import com.google.common.collect.ImmutableSet;
-
 // NOTE:without testName, this will not call @Before* and fail w/NPE during surefire
-@Test(groups = "unit", testName = "ZonesResultHandlerTest")
-public class AvailabilityZonesResultHandlerTest extends BaseHandlerTest {
+@Test(groups = "unit", testName = "HealthCheckResultHandlerTest")
+public class HealthCheckResultHandlerTest extends BaseHandlerTest {
 
    public void test() {
-      InputStream is = getClass().getResourceAsStream("/zones.xml");
+      InputStream is = getClass().getResourceAsStream("/configure_health_check.xml");
 
-      Set<String> expected = expected();
+      HealthCheck expected = expected();
 
-      MemberResultHandler handler = injector.getInstance(MemberResultHandler.class);
-      Set<String> result = factory.create(handler).parse(is);
+      HealthCheckHandler handler = injector.getInstance(HealthCheckHandler.class);
+      HealthCheck result = factory.create(handler).parse(is);
 
       assertEquals(result.toString(), expected.toString());
 
    }
 
-   public Set<String> expected() {
-      return ImmutableSet.of("us-east-1c");
+   public HealthCheck expected() {
+      return HealthCheck.builder()
+              .healthyThreshold(2)
+              .unhealthyThreshold(2)
+              .target("HTTP:80/ping")
+              .interval(30)
+              .timeout(3)
+              .build();
    }
 }

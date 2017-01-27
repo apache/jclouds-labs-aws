@@ -21,9 +21,11 @@ import java.util.Set;
 
 import org.jclouds.aws.filters.FormSigner;
 import org.jclouds.elb.features.AvailabilityZoneApi;
+import org.jclouds.elb.features.HealthCheckApi;
 import org.jclouds.elb.features.InstanceApi;
 import org.jclouds.elb.features.LoadBalancerApi;
 import org.jclouds.elb.features.PolicyApi;
+import org.jclouds.elb.features.SubnetApi;
 import org.jclouds.javax.annotation.Nullable;
 import org.jclouds.location.Region;
 import org.jclouds.location.functions.RegionToEndpointOrProviderIfNull;
@@ -90,5 +92,21 @@ public interface ELBApi extends Closeable {
    @Delegate
    AvailabilityZoneApi getAvailabilityZoneApiForRegion(
             @EndpointParam(parser = RegionToEndpointOrProviderIfNull.class) @Nullable String region);
+
+   /**
+    * Provides access to HealthCheck features.
+    */
+   @Delegate
+   HealthCheckApi getHealthCheckApi();
+
+   @Delegate
+   HealthCheckApi getHealthCheckApiForRegion(
+           @EndpointParam(parser = RegionToEndpointOrProviderIfNull.class) @Nullable String region);
+
+   /**
+    * Provides access to Subnet features.
+    */
+   @Delegate
+   SubnetApi getSubnetApi();
 
 }

@@ -27,7 +27,7 @@ import javax.ws.rs.Path;
 
 import org.jclouds.aws.filters.FormSigner;
 import org.jclouds.elb.binders.BindAvailabilityZonesToIndexedFormParams;
-import org.jclouds.elb.xml.AvailabilityZonesResultHandler;
+import org.jclouds.elb.xml.MemberResultHandler;
 import org.jclouds.rest.annotations.BinderParam;
 import org.jclouds.rest.annotations.FormParams;
 import org.jclouds.rest.annotations.RequestFilters;
@@ -70,7 +70,7 @@ public interface AvailabilityZoneApi {
    @Named("EnableAvailabilityZonesForLoadBalancer")
    @POST
    @Path("/")
-   @XMLResponseParser(AvailabilityZonesResultHandler.class)
+   @XMLResponseParser(MemberResultHandler.class)
    @FormParams(keys = ACTION, values = "EnableAvailabilityZonesForLoadBalancer")
    Set<String> addAvailabilityZonesToLoadBalancer(
             @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> zones,
@@ -83,7 +83,7 @@ public interface AvailabilityZoneApi {
    @Named("EnableAvailabilityZonesForLoadBalancer")
    @POST
    @Path("/")
-   @XMLResponseParser(AvailabilityZonesResultHandler.class)
+   @XMLResponseParser(MemberResultHandler.class)
    @FormParams(keys = ACTION, values = "EnableAvailabilityZonesForLoadBalancer")
    Set<String> addAvailabilityZoneToLoadBalancer(
             @FormParam("AvailabilityZones.member.1") String zone,
@@ -128,7 +128,7 @@ public interface AvailabilityZoneApi {
    @Named("DisableAvailabilityZonesForLoadBalancer")
    @POST
    @Path("/")
-   @XMLResponseParser(AvailabilityZonesResultHandler.class)
+   @XMLResponseParser(MemberResultHandler.class)
    @FormParams(keys = ACTION, values = "DisableAvailabilityZonesForLoadBalancer")
    Set<String> removeAvailabilityZonesFromLoadBalancer(
             @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> zones,
@@ -140,7 +140,7 @@ public interface AvailabilityZoneApi {
    @Named("DisableAvailabilityZonesForLoadBalancer")
    @POST
    @Path("/")
-   @XMLResponseParser(AvailabilityZonesResultHandler.class)
+   @XMLResponseParser(MemberResultHandler.class)
    @FormParams(keys = ACTION, values = "DisableAvailabilityZonesForLoadBalancer")
    Set<String> removeAvailabilityZoneFromLoadBalancer(
             @FormParam("AvailabilityZones.member.1") String zone,
