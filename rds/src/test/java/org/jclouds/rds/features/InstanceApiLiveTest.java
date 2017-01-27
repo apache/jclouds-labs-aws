@@ -160,7 +160,7 @@ public class InstanceApiLiveTest extends BaseRDSApiLiveTest {
    }
 
    @Override
-   @AfterClass(groups = "live")
+   @AfterClass(groups = "live", alwaysRun = true)
    protected void tearDown() {
       try {
          api().delete(INSTANCE);

@@ -1,0 +1,10 @@
+<DetachLoadBalancerFromSubnetsResponse xmlns="http://elasticloadbalancing.amazonaws.com/doc/2012-06-01/">
+    <DetachLoadBalancerFromSubnetsResult>
+        <Subnets>
+            <member>subnet-3561b05e</member>
+        </Subnets>
+    </DetachLoadBalancerFromSubnetsResult>
+    <ResponseMetadata>
+        <RequestId>07b1ecbc-1100-11e3-acaf-dd7edEXAMPLE</RequestId>
+    </ResponseMetadata>
+</DetachLoadBalancerFromSubnetsResponse>

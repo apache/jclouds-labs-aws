@@ -48,6 +48,7 @@ public class PolicyHandler extends ParseSax.HandlerForGeneratedRequestWithResult
       }
    }
 
+
    /**
     * {@inheritDoc}
     */
@@ -59,7 +60,7 @@ public class PolicyHandler extends ParseSax.HandlerForGeneratedRequestWithResult
          builder.typeName(currentOrNull(currentText));
       } else if (equalsOrSuffix(qName, "AttributeName")) {
          key = currentOrNull(currentText);
-      } else if (equalsOrSuffix(qName, "AttributeValue")) {
+      } else if (equalsOrSuffix(qName, "AttributeValue") && key != null) {
          String value = currentOrNull(currentText);
          if ("true".equalsIgnoreCase(value) || "false".equalsIgnoreCase(value))
             builder.attribute(key, Boolean.valueOf(value));

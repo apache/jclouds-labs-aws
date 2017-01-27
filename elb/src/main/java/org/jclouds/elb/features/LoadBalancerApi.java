@@ -31,6 +31,7 @@ import org.jclouds.aws.filters.FormSigner;
 import org.jclouds.collect.IterableWithMarker;
 import org.jclouds.collect.PagedIterable;
 import org.jclouds.elb.binders.BindAvailabilityZonesToIndexedFormParams;
+import org.jclouds.elb.binders.BindListenerPortsToIndexedFormParams;
 import org.jclouds.elb.binders.BindListenersToFormParams;
 import org.jclouds.elb.binders.BindSecurityGroupsToIndexedFormParams;
 import org.jclouds.elb.binders.BindSubnetsToIndexedFormParams;
@@ -53,7 +54,7 @@ import org.jclouds.rest.annotations.XMLResponseParser;
 /**
  * Provides access to Amazon ELB via the Query API
  * <p/>
- * 
+ *
  * @see <a href="http://docs.amazonwebservices.com/ElasticLoadBalancing/latest/APIReference"
  *      >doc</a>
  */
@@ -61,14 +62,29 @@ import org.jclouds.rest.annotations.XMLResponseParser;
 @VirtualHost
 public interface LoadBalancerApi {
 
+    /**
+     * Creates listeners for an existing load balancer.
+     *
+     * @param name Name of the loadBalancer to create the listeners in.
+     * @param listeners The listeners to create.
+     * @return null if load balancer is not found
+     */
+    @Named("CreateLoadBalancerListeners")
+    @POST
+    @Path("/")
+    @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
+    @FormParams(keys = ACTION, values = "CreateLoadBalancerListeners")
+    String createLoadBalancerListeners(@FormParam("LoadBalancerName") String name,
+                                       @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners);
+
    @Named("CreateLoadBalancer")
    @POST
    @Path("/")
    @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
    @FormParams(keys = ACTION, values = "CreateLoadBalancer")
-   String createListeningInAvailabilityZones(@FormParam("LoadBalancerName") String name,
-             @BinderParam(BindListenersToFormParams.class) Listener listeners,
-             @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> availabilityZones);
+   String createLoadBalancerInAvailabilityZones(@FormParam("LoadBalancerName") String name,
+                                             @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners,
+                                             @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> availabilityZones);
 
    @Named("CreateLoadBalancer")
    @POST
@@ -76,8 +92,26 @@ public interface LoadBalancerApi {
    @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
    @FormParams(keys = ACTION, values = "CreateLoadBalancer")
    String createListeningInAvailabilityZones(@FormParam("LoadBalancerName") String name,
-            @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners,
-            @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> availabilityZones);
+                                             @BinderParam(BindListenersToFormParams.class) Listener listeners,
+                                             @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> availabilityZones);
+
+   @Named("CreateLoadBalancer")
+   @POST
+   @Path("/")
+   @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
+   @FormParams(keys = ACTION, values = "CreateLoadBalancer")
+   String createListeningInAvailabilityZones(@FormParam("LoadBalancerName") String name,
+                                             @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners,
+                                             @BinderParam(BindAvailabilityZonesToIndexedFormParams.class) Iterable<String> availabilityZones);
+
+   @Named("CreateLoadBalancer")
+   @POST
+   @Path("/")
+   @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
+   @FormParams(keys = ACTION, values = "CreateLoadBalancer")
+   String createLoadBalancerInSubnets(@FormParam("LoadBalancerName") String name,
+                                             @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners,
+                                             @BinderParam(BindSubnetsToIndexedFormParams.class) Iterable<String> subnets);
 
    @Named("CreateLoadBalancer")
    @POST
@@ -85,9 +119,9 @@ public interface LoadBalancerApi {
    @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
    @FormParams(keys = ACTION, values = "CreateLoadBalancer")
    String createListeningInSubnetAssignedToSecurityGroups(
-            @FormParam("LoadBalancerName") String name,
-            @FormParam("Subnets.member.1") String subnetId,
-            @BinderParam(BindSecurityGroupsToIndexedFormParams.class) Iterable<String> securityGroupIds);
+           @FormParam("LoadBalancerName") String name,
+           @FormParam("Subnets.member.1") String subnetId,
+           @BinderParam(BindSecurityGroupsToIndexedFormParams.class) Iterable<String> securityGroupIds);
 
    @Named("CreateLoadBalancer")
    @POST
@@ -95,15 +129,36 @@ public interface LoadBalancerApi {
    @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
    @FormParams(keys = ACTION, values = "CreateLoadBalancer")
    String createListeningInSubnetsAssignedToSecurityGroups(
-            @FormParam("LoadBalancerName") String name,
-            @BinderParam(BindSubnetsToIndexedFormParams.class) Iterable<String> subnetIds,
-            @BinderParam(BindSecurityGroupsToIndexedFormParams.class) Iterable<String> securityGroupIds);
+           @FormParam("LoadBalancerName") String name,
+           @BinderParam(BindSubnetsToIndexedFormParams.class) Iterable<String> subnetIds,
+           @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners,
+           @BinderParam(BindSecurityGroupsToIndexedFormParams.class) Iterable<String> securityGroupIds);
+
+   @Named("CreateLoadBalancer")
+   @POST
+   @Path("/")
+   @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
+   @FormParams(keys = ACTION, values = "CreateLoadBalancer")
+   String createListeningInSubnetsAssignedToSecurityGroups(
+           @FormParam("LoadBalancerName") String name,
+           @BinderParam(BindSubnetsToIndexedFormParams.class) Iterable<String> subnetIds,
+           @BinderParam(BindSecurityGroupsToIndexedFormParams.class) Iterable<String> securityGroupIds);
+
+   @Named("CreateLoadBalancer")
+   @POST
+   @Path("/")
+   @XMLResponseParser(CreateLoadBalancerResponseHandler.class)
+   @FormParams(keys = ACTION, values = "CreateLoadBalancer")
+   String createListeningInSubnets(
+           @FormParam("LoadBalancerName") String name,
+           @BinderParam(BindListenersToFormParams.class) Iterable<Listener> listeners,
+           @BinderParam(BindSubnetsToIndexedFormParams.class) Iterable<String> subnetIds);
+
 
    /**
     * Retrieves information about the specified loadBalancer.
-    * 
-    * @param name
-    *           Name of the loadBalancer to get information about.
+    *
+    * @param name Name of the loadBalancer to get information about.
     * @return null if not found
     */
    @Named("DescribeLoadBalancers")
@@ -117,7 +172,7 @@ public interface LoadBalancerApi {
 
    /**
     * Lists the loadBalancers all load balancers
-    * 
+    *
     * @return the response object
     */
    @Named("DescribeLoadBalancers")
@@ -132,13 +187,11 @@ public interface LoadBalancerApi {
    /**
     * Returns detailed configuration information for the specified LoadBalancers. If there are none,
     * the action returns an empty list.
-    * 
+    *
     * <br/>
     * You can paginate the results using the {@link ListLoadBalancersOptions parameter}
-    * 
-    * @param options
-    *           the options describing the loadBalancers query
-    * 
+    *
+    * @param options the options describing the loadBalancers query
     * @return the response object
     */
    @Named("DescribeLoadBalancers")
@@ -151,26 +204,24 @@ public interface LoadBalancerApi {
 
    /**
     * Deletes the specified LoadBalancer.
-    * 
+    *
     * <p/>
     * If attempting to recreate the LoadBalancer, the api must reconfigure all the settings. The
     * DNS name associated with a deleted LoadBalancer will no longer be usable. Once deleted, the
     * name and associated DNS record of the LoadBalancer no longer exist and traffic sent to any of
     * its IP addresses will no longer be delivered to api instances. The api will not receive
     * the same DNS name even if a new LoadBalancer with same LoadBalancerName is created.
-    * 
+    *
     * <p/>
     * To successfully call this API, the api must provide the same account credentials as were
     * used to create the LoadBalancer.
-    * 
+    *
     * <h4>Note</h4>
-    * 
+    *
     * By design, if the LoadBalancer does not exist or has already been deleted, DeleteLoadBalancer
     * still succeeds.
-    * 
-    * 
-    * @param name
-    *           Name of the load balancer
+    *
+    * @param name Name of the load balancer
     */
    @Named("DeleteLoadBalancer")
    @POST
@@ -178,4 +229,25 @@ public interface LoadBalancerApi {
    @Fallback(VoidOnNotFoundOr404.class)
    @FormParams(keys = ACTION, values = "DeleteLoadBalancer")
    void delete(@FormParam("LoadBalancerName") String name);
+
+
+   @Named("DeleteLoadBalancerListeners")
+   @POST
+   @Path("/")
+   @Fallback(VoidOnNotFoundOr404.class)
+   @FormParams(keys = ACTION, values = "DeleteLoadBalancerListeners")
+   void deleteLoadBalancerListeners(
+           @FormParam("LoadBalancerName") String loadBalancerName,
+           @BinderParam(BindListenerPortsToIndexedFormParams.class) Iterable<Integer> listenerPorts);
+
+
+   @Named("ApplySecurityGroupsToLoadBalancer")
+   @POST
+   @Path("/")
+   @Fallback(VoidOnNotFoundOr404.class)
+   @FormParams(keys = ACTION, values = "ApplySecurityGroupsToLoadBalancer")
+   void applySecurityGroupsToLoadBalancer(
+           @FormParam("LoadBalancerName") String loadBalancerName,
+           @BinderParam(BindSecurityGroupsToIndexedFormParams.class) Iterable<String> securityGroupIds);
+
 }

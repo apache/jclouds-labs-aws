@@ -30,7 +30,7 @@ import org.testng.annotations.Test;
 import com.google.common.base.Function;
 import com.google.common.collect.Iterables;
 
-@Test(groups = "live", testName = "PolicyApiLiveTest")
+@Test(groups = "live", testName = "PolicyApiLiveTest", singleThreaded = true)
 public class PolicyApiLiveTest extends BaseELBApiLiveTest {
 
    private void checkPolicy(Policy policy) {
@@ -56,7 +56,6 @@ public class PolicyApiLiveTest extends BaseELBApiLiveTest {
 
    private void checkPolicyType(PolicyType policyType) {
       checkNotNull(policyType.getName(), "Name cannot be null for a PolicyType.");
-      checkNotNull(policyType.getDescription(), "Description cannot be null for a PolicyType.");
       checkNotNull(policyType.getAttributeMetadata(), "While it is ok to have no attributes, the set cannot be null.");
       for (AttributeMetadata<?> attributeMetadata : policyType.getAttributeMetadata()) {
          checkAttributeMetadata(attributeMetadata);
