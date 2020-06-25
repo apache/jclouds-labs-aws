@@ -19,9 +19,9 @@ package org.jclouds.elb.domain;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.base.MoreObjects.ToStringHelper;
 import com.google.common.base.Objects;
 import com.google.common.base.Optional;
-import com.google.common.base.Objects.ToStringHelper;
 
 /**
  * Listener is a process that listens for api connection requests. It is configured with a
@@ -216,7 +216,7 @@ public class Listener {
    }
 
    protected ToStringHelper string() {
-      return Objects.toStringHelper(this).omitNullValues().add("instancePort", instancePort).add("instanceProtocol",
+      return MoreObjects.toStringHelper(this).omitNullValues().add("instancePort", instancePort).add("instanceProtocol",
                instanceProtocol).add("port", port).add("protocol", protocol).add("SSLCertificateId",
                SSLCertificateId.orNull());
    }
