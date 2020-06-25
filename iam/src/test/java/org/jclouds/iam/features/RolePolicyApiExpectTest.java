@@ -182,6 +182,7 @@ public class RolePolicyApiExpectTest extends BaseIAMApiExpectTest {
    }
 
    // TODO: this should really be an empty set
+   @SuppressWarnings("CheckReturnValue")
    @Test(expectedExceptions = ResourceNotFoundException.class)
    public void testListWhenResponseIs404() throws Exception {
 
