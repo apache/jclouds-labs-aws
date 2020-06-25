@@ -16,7 +16,7 @@
  */
 package org.jclouds.elb.internal;
 
-import static com.google.common.util.concurrent.MoreExecutors.sameThreadExecutor;
+import static com.google.common.util.concurrent.MoreExecutors.newDirectExecutorService;
 import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
@@ -44,7 +44,7 @@ public class BaseELBApiMockTest {
     private static final String DEFAULT_ENDPOINT = "http:";
     //new AWSELBProviderMetadata().getEndpoint();
 
-    private final Set<Module> modules = ImmutableSet.<Module> of(new ExecutorServiceModule(sameThreadExecutor()));
+    private final Set<Module> modules = ImmutableSet.<Module> of(new ExecutorServiceModule(newDirectExecutorService()));
 
     protected MockWebServer server;
     protected ELBApi api;

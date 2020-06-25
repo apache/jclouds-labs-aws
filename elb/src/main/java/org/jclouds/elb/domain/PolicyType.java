@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.Set;
 
 import com.google.common.base.Function;
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Maps;
@@ -164,7 +165,7 @@ public class PolicyType {
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("description", description)
+      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("description", description)
                .add("attributeMetadata", attributeMetadata).toString();
    }
 

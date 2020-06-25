@@ -18,8 +18,9 @@ package org.jclouds.elb.domain;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.base.MoreObjects;
+import com.google.common.base.MoreObjects.ToStringHelper;
 import com.google.common.base.Objects;
-import com.google.common.base.Objects.ToStringHelper;
 import com.google.common.base.Optional;
 
 /**
@@ -223,7 +224,7 @@ public class AttributeMetadata<V> {
    }
 
    protected ToStringHelper string() {
-      return Objects.toStringHelper(this).omitNullValues().add("name", name).add("type", type).add("rawType", rawType)
+      return MoreObjects.toStringHelper(this).omitNullValues().add("name", name).add("type", type).add("rawType", rawType)
                .add("cardinality", cardinality).add("defaultValue", defaultValue.orNull())
                .add("description", description.orNull());
    }

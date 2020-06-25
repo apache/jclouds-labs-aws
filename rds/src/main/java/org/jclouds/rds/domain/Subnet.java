@@ -18,6 +18,7 @@ package org.jclouds.rds.domain;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
+import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 /**
@@ -133,7 +134,7 @@ public class Subnet {
     */
    @Override
    public String toString() {
-      return Objects.toStringHelper(this).omitNullValues().add("id", id).add("availabilityZone", availabilityZone)
+      return MoreObjects.toStringHelper(this).omitNullValues().add("id", id).add("availabilityZone", availabilityZone)
                .add("status", status).toString();
    }
 

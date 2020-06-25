@@ -22,7 +22,7 @@ import java.util.Set;
 
 import org.jclouds.rds.domain.internal.BaseInstance;
 
-import com.google.common.base.Objects.ToStringHelper;
+import com.google.common.base.MoreObjects.ToStringHelper;
 import com.google.common.base.Optional;
 import com.google.common.collect.ImmutableSet;
 
