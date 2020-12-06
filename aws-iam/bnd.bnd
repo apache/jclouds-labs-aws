@@ -1,0 +1,2 @@
+Export-Package: \
+    org.jclouds.aws.iam.*;version="${project.version}";-noimport:=true

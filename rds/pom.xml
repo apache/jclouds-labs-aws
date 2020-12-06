@@ -30,7 +30,6 @@
   <artifactId>rds</artifactId>
   <name>jcloud rds api</name>
   <description>jclouds components to access an implementation of Relational Database Service</description>
-  <packaging>bundle</packaging>
 
   <properties>
     <test.aws.identity>FIXME_IDENTITY</test.aws.identity>
@@ -40,13 +39,6 @@
     <test.rds.build-version />
     <test.rds.identity>${test.aws.identity}</test.rds.identity>
     <test.rds.credential>${test.aws.credential}</test.rds.credential>
-
-    <jclouds.osgi.export>org.jclouds.rds*;version="${project.version}"</jclouds.osgi.export>
-    <jclouds.osgi.import>
-      org.jclouds.labs*;version="${project.version}",
-      org.jclouds*;version="${jclouds.version}",
-      *
-    </jclouds.osgi.import>
   </properties>
 
   <dependencies>

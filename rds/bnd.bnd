@@ -1,0 +1,2 @@
+Export-Package: \
+    org.jclouds.rds.*;version="${project.version}";-noimport:=true
