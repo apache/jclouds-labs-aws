@@ -1,0 +1,2 @@
+Export-Package: \
+    org.jclouds.aws.elb.*;version="${project.version}";-noimport:=true

@@ -30,7 +30,6 @@
   <artifactId>elb</artifactId>
   <name>jcloud elb api</name>
   <description>jclouds components to access an implementation of Elastic Load Balancer</description>
-  <packaging>bundle</packaging>
 
   <properties>
     <test.aws.identity>FIXME_IDENTITY</test.aws.identity>
@@ -47,13 +46,6 @@
     <test.elb.compute.identity>${test.aws.identity}</test.elb.compute.identity>
     <test.elb.compute.credential>${test.aws.credential}</test.elb.compute.credential>
     <test.elb.compute.template />
-
-    <jclouds.osgi.export>org.jclouds.elb*;version="${project.version}"</jclouds.osgi.export>
-    <jclouds.osgi.import>
-      org.jclouds.labs*;version="${project.version}",
-      org.jclouds*;version="${jclouds.version}",
-      *
-    </jclouds.osgi.import>
   </properties>
 
   <dependencies>

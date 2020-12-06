@@ -30,7 +30,6 @@
   <artifactId>iam</artifactId>
   <name>jcloud iam api</name>
   <description>jclouds components to access an implementation of Identity and Access Management (IAM)</description>
-  <packaging>bundle</packaging>
 
   <properties>
     <test.aws.identity>FIXME_IDENTITY</test.aws.identity>
@@ -40,13 +39,6 @@
     <test.iam.build-version />
     <test.iam.identity>${test.aws.identity}</test.iam.identity>
     <test.iam.credential>${test.aws.credential}</test.iam.credential>
-
-    <jclouds.osgi.export>org.jclouds.iam*;version="${project.version}"</jclouds.osgi.export>
-    <jclouds.osgi.import>
-      org.jclouds.labs*;version="${project.version}",
-      org.jclouds*;version="${jclouds.version}",
-      *
-    </jclouds.osgi.import>
   </properties>
 
   <dependencies>
