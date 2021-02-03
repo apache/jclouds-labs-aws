@@ -34,9 +34,9 @@ import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.io.Resources;
 import com.google.inject.Module;
-import com.squareup.okhttp.mockwebserver.MockResponse;
-import com.squareup.okhttp.mockwebserver.MockWebServer;
-import com.squareup.okhttp.mockwebserver.RecordedRequest;
+import okhttp3.mockwebserver.MockResponse;
+import okhttp3.mockwebserver.MockWebServer;
+import okhttp3.mockwebserver.RecordedRequest;
 
 public class BaseELBApiMockTest {
 
@@ -52,7 +52,7 @@ public class BaseELBApiMockTest {
     @BeforeMethod
     public void start() throws IOException {
         server = new MockWebServer();
-        server.play();
+        server.start();
         api = ContextBuilder.newBuilder("elb")
                 .credentials("", MOCK_BEARER_TOKEN)
                 .endpoint(url(""))
@@ -72,7 +72,7 @@ public class BaseELBApiMockTest {
     }
 
     protected String url(String path) {
-        return server.getUrl(path).toString();
+        return server.url(path).toString();
     }
 
     protected MockResponse xmlResponse(String resource) {
